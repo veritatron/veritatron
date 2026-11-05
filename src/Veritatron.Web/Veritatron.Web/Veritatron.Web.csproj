@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Veritatron.Web.Client\Veritatron.Web.Client.csproj" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="10.*" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,33 @@
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3em;
+    font-family: var(--mud-typography-default-family);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.03em;
+}
+
+.mark {
+    flex: none;
+    width: 1.45em;
+    height: 1.45em;
+}
+
+.mark-left {
+    fill: var(--mud-palette-primary);
+}
+
+.mark-right {
+    fill: var(--mud-palette-secondary);
+}
+
+.wordmark-first {
+    color: var(--mud-palette-primary);
+}
+
+.wordmark-second {
+    display: inline-block;
+    color: var(--mud-palette-secondary);
+    transform: translateY(-0.095em);
+}

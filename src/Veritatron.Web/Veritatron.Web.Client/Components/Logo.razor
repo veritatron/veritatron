@@ -1,0 +1,9 @@
+@inject IStringLocalizer<Logo> Localizer
+
+<span class="logo" role="img" aria-label="@Localizer["AriaLabel"]">
+    <svg class="mark" viewBox="200 200 680 680" aria-hidden="true" focusable="false">
+        <polygon class="mark-left" points="215,270 375,270 528,695 528,880 435,880" />
+        <polygon class="mark-right" points="865,210 705,210 552,635 552,820 645,820" />
+    </svg>
+    <span class="wordmark" aria-hidden="true"><span class="wordmark-first">@Localizer["WordmarkFirst"]</span><span class="wordmark-second">@Localizer["WordmarkSecond"]</span></span>
+</span>

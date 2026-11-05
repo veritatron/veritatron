@@ -1,4 +1,17 @@
 ﻿@inherits LayoutComponentBase
 
-@Body
+<MudThemeProvider Theme="VeritatronTheme.Instance" IsDarkMode="true" />
+<MudPopoverProvider />
+<MudDialogProvider />
+<MudSnackbarProvider />
 
+<MudLayout>
+    <MudAppBar Elevation="0">
+        <a href="" class="brand-link"><Logo /></a>
+    </MudAppBar>
+    <MudMainContent>
+        <MudContainer MaxWidth="MaxWidth.Large" Class="pt-8">
+            @Body
+        </MudContainer>
+    </MudMainContent>
+</MudLayout>

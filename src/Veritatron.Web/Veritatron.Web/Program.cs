@@ -5,6 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add MudBlazor services
 builder.Services.AddMudServices();
+builder.Services.AddLocalization();
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
