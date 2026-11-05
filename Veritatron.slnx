@@ -1,3 +1,5 @@
 <Solution>
+  <Project Path="src/Veritatron.Web/Veritatron.Web.Client/Veritatron.Web.Client.csproj" Id="56b50582-f20f-4e97-93eb-3e612de4daeb" />
+  <Project Path="src/Veritatron.Web/Veritatron.Web/Veritatron.Web.csproj" Id="c696dae2-f37b-4f36-b6a1-20f66ab4dfae" />
   <Project Path="Veritatron.AppHost/Veritatron.AppHost.csproj" />
 </Solution>
