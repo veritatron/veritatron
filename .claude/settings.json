@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dotnet build:*)",
+      "Bash(dotnet test:*)",
+      "Bash(dotnet format:*)",
+      "Bash(dotnet package search:*)"
+    ],
+    "deny": [
+      "Read(**/appsettings.Development.json)",
+      "Edit(**/appsettings.Development.json)"
+    ]
+  }
+}
