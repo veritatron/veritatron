@@ -1,1 +1,3 @@
-<Solution />
+<Solution>
+  <Project Path="Veritatron.AppHost/Veritatron.AppHost.csproj" />
+</Solution>
