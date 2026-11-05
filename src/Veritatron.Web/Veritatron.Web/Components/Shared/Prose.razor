@@ -1,0 +1,11 @@
+<article class="prose">
+    @ChildContent
+</article>
+
+@code {
+    /// <summary>
+    /// Long-form content such as legal texts or, later, blog posts.
+    /// </summary>
+    [Parameter, EditorRequired]
+    public RenderFragment? ChildContent { get; set; }
+}

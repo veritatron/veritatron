@@ -1,0 +1,27 @@
+.not-found {
+    text-align: left;
+}
+
+.not-found__code {
+    margin: 0;
+    color: transparent;
+    font-size: clamp(6rem, 22vw, 12rem);
+    font-weight: 700;
+    line-height: 0.9;
+    letter-spacing: -0.05em;
+    -webkit-text-stroke: 2px var(--mud-palette-primary);
+}
+
+.not-found__title {
+    margin: 24px 0 12px;
+    font-size: clamp(1.875rem, 4vw, var(--mud-typography-h3-size));
+    font-weight: var(--mud-typography-h3-weight);
+    line-height: var(--mud-typography-h3-lineheight);
+    letter-spacing: var(--mud-typography-h3-letterspacing);
+}
+
+.not-found__text {
+    max-width: 52ch;
+    margin: 0 0 32px;
+    color: var(--mud-palette-text-secondary);
+}

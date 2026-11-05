@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Title" xml:space="preserve">
+    <value>Fehler – Veritatron</value>
+  </data>
+  <data name="Overline" xml:space="preserve">
+    <value>Fehler</value>
+  </data>
+  <data name="Heading" xml:space="preserve">
+    <value>Da ist etwas schiefgelaufen.</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>Beim Laden der Seite ist ein unerwarteter Fehler aufgetreten. Bitte versuche es in einem Moment noch einmal.</value>
+  </data>
+  <data name="RequestId" xml:space="preserve">
+    <value>Anfrage-ID: {0}</value>
+  </data>
+  <data name="BackHome" xml:space="preserve">
+    <value>Zur Startseite</value>
+  </data>
+</root>

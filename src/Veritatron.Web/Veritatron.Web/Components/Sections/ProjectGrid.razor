@@ -1,0 +1,37 @@
+@inject IStringLocalizer<ProjectGrid> Localizer
+
+<section id="@SitePaths.ProjectsSectionId" class="vt-section" aria-labelledby="@TitleId">
+    <div class="vt-container">
+        <SectionHeader TitleId="@TitleId"
+                       Overline="@Localizer["Overline"]"
+                       Title="@Localizer["Title"]"
+                       Intro="@Localizer["Intro"]" />
+        @if (Subsites.Count == 0)
+        {
+            <p class="projects__empty">@Localizer["Empty"]</p>
+        }
+        else if (Subsites.Count == 1)
+        {
+            <ProjectSpotlight Subsite="Subsites[0]" />
+        }
+        else
+        {
+            <ul class="projects__grid">
+                @foreach (var subsite in Subsites)
+                {
+                    <li class="projects__item"><ProjectCard Subsite="subsite" /></li>
+                }
+            </ul>
+        }
+    </div>
+</section>
+
+@code {
+    private const string TitleId = "projects-title";
+
+    /// <summary>
+    /// The subsites to show, in display order.
+    /// </summary>
+    [Parameter, EditorRequired]
+    public IReadOnlyList<Subsite> Subsites { get; set; } = [];
+}

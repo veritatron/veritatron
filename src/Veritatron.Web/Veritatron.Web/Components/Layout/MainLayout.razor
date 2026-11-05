@@ -1,0 +1,19 @@
+@inherits LayoutComponentBase
+@inject IStringLocalizer<MainLayout> Localizer
+@inject NavigationManager Navigation
+
+<MudThemeProvider Theme="VeritatronTheme.Instance" IsDarkMode="true" />
+
+<a class="skip-link" href="@SkipLinkTarget">@Localizer["SkipToContent"]</a>
+
+<div class="page">
+    <SiteHeader />
+    <main id="@SitePaths.MainContentId" class="page__main" tabindex="-1">
+        @Body
+    </main>
+    <SiteFooter />
+</div>
+
+@code {
+    private string SkipLinkTarget => $"{new Uri(Navigation.Uri).GetLeftPart(UriPartial.Query)}#{SitePaths.MainContentId}";
+}

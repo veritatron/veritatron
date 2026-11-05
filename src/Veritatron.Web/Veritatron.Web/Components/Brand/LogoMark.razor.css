@@ -1,0 +1,30 @@
+.logo-mark {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+.logo-mark__left {
+    fill: var(--mud-palette-primary);
+}
+
+.logo-mark__right {
+    fill: var(--mud-palette-secondary);
+}
+
+.logo-mark--outlined .logo-mark__left,
+.logo-mark--outlined .logo-mark__right {
+    fill: none;
+    stroke-width: 1.5px;
+    stroke-linejoin: round;
+    vector-effect: non-scaling-stroke;
+}
+
+.logo-mark--outlined .logo-mark__left {
+    stroke: var(--mud-palette-primary);
+}
+
+.logo-mark--outlined .logo-mark__right {
+    stroke: var(--mud-palette-secondary);
+}

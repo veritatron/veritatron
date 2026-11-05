@@ -1,0 +1,33 @@
+@inject IStringLocalizer<Hero> Localizer
+
+<section class="hero" aria-labelledby="@TitleId">
+    <div class="hero__mark" aria-hidden="true"><LogoMark Outlined="true" /></div>
+    <div class="vt-container hero__inner">
+        <p class="vt-overline">@Localizer["Eyebrow"]</p>
+        <h1 id="@TitleId" class="hero__title">
+            <span class="hero__title-line">@Localizer["TitleLead"]</span>
+            <span class="hero__title-line hero__title-line--accent">@Localizer["TitleAccent"]</span>
+        </h1>
+        <p class="hero__lead">@Localizer["Lead"]</p>
+        <div class="hero__actions">
+            <MudButton Href="@SitePaths.Projects"
+                       Variant="Variant.Filled"
+                       Color="Color.Primary"
+                       Size="Size.Large"
+                       DropShadow="false"
+                       EndIcon="@Icons.Material.Rounded.ArrowDownward">
+                @Localizer["PrimaryAction"]
+            </MudButton>
+            <MudButton Href="@SitePaths.About"
+                       Variant="Variant.Text"
+                       Color="Color.Secondary"
+                       Size="Size.Large">
+                @Localizer["SecondaryAction"]
+            </MudButton>
+        </div>
+    </div>
+</section>
+
+@code {
+    private const string TitleId = "hero-title";
+}

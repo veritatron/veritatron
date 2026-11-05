@@ -1,0 +1,13 @@
+@inject IStringLocalizer<SiteHeader> Localizer
+
+<header class="site-header">
+    <div class="vt-container site-header__inner">
+        <a href="@SitePaths.Home" class="site-header__brand" aria-label="@Localizer["HomeLink"]"><Logo /></a>
+        <nav aria-label="@Localizer["NavigationLabel"]">
+            <ul class="site-header__nav">
+                <li><a href="@SitePaths.Projects" class="site-header__link">@Localizer["Projects"]</a></li>
+                <li><a href="@SitePaths.About" class="site-header__link">@Localizer["About"]</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>

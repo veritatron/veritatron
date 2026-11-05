@@ -1,0 +1,33 @@
+@inject IStringLocalizer<About> Localizer
+
+<section id="@SitePaths.AboutSectionId" class="vt-section about" aria-labelledby="@TitleId">
+    <div class="vt-container about__inner">
+        <div class="about__aside">
+            <SectionHeader TitleId="@TitleId"
+                           Overline="@Localizer["Overline"]"
+                           Title="@Localizer["Title"]" />
+        </div>
+        <div class="about__body">
+            <p class="about__text">@Localizer["Paragraph1"]</p>
+            <p class="about__text">@Localizer["Paragraph2"]</p>
+            <ol class="principles">
+                <li class="principle">
+                    <h3 class="principle__title">@Localizer["Principle1Title"]</h3>
+                    <p class="principle__text">@Localizer["Principle1Text"]</p>
+                </li>
+                <li class="principle">
+                    <h3 class="principle__title">@Localizer["Principle2Title"]</h3>
+                    <p class="principle__text">@Localizer["Principle2Text"]</p>
+                </li>
+                <li class="principle">
+                    <h3 class="principle__title">@Localizer["Principle3Title"]</h3>
+                    <p class="principle__text">@Localizer["Principle3Text"]</p>
+                </li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+@code {
+    private const string TitleId = "about-title";
+}

@@ -1,0 +1,12 @@
+<svg class="logo-mark @(Outlined ? "logo-mark--outlined" : null)" viewBox="@LogoGeometry.ViewBox" aria-hidden="true" focusable="false">
+    <polygon class="logo-mark__left" points="@LogoGeometry.LeftStroke" />
+    <polygon class="logo-mark__right" points="@LogoGeometry.RightStroke" />
+</svg>
+
+@code {
+    /// <summary>
+    /// Draws the strokes as thin outlines instead of filled shapes.
+    /// </summary>
+    [Parameter]
+    public bool Outlined { get; set; }
+}

@@ -1,0 +1,34 @@
+@attribute [Route(SitePaths.Privacy)]
+@inject IStringLocalizer<Privacy> Localizer
+
+<PageTitle>@Localizer["Title"]</PageTitle>
+<HeadContent>
+    <meta name="description" content="@Localizer["MetaDescription"]" />
+    <meta name="robots" content="noindex" />
+</HeadContent>
+
+<div class="vt-container vt-section">
+    <Prose>
+        <p class="vt-overline">@Localizer["Overline"]</p>
+        <h1>@Localizer["Heading"]</h1>
+        @if (!string.IsNullOrEmpty(Localizer["Notice"]))
+        {
+            <p class="prose__notice">@Localizer["Notice"]</p>
+        }
+
+        <h2>@Localizer["ControllerHeading"]</h2>
+        <p>@Localizer["ControllerText"]</p>
+
+        <h2>@Localizer["HostingHeading"]</h2>
+        <p>@Localizer["HostingText"]</p>
+
+        <h2>@Localizer["CookiesHeading"]</h2>
+        <p>@Localizer["CookiesText"]</p>
+
+        <h2>@Localizer["LinksHeading"]</h2>
+        <p>@Localizer["LinksText"]</p>
+
+        <h2>@Localizer["RightsHeading"]</h2>
+        <p>@Localizer["RightsText"]</p>
+    </Prose>
+</div>

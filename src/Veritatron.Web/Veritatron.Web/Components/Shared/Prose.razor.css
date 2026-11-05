@@ -1,0 +1,44 @@
+.prose {
+    max-width: 68ch;
+}
+
+.prose ::deep h1 {
+    margin: 16px 0 32px;
+    font-size: clamp(2.25rem, 5vw, var(--mud-typography-h2-size));
+    font-weight: var(--mud-typography-h1-weight);
+    line-height: var(--mud-typography-h2-lineheight);
+    letter-spacing: var(--mud-typography-h2-letterspacing);
+}
+
+.prose ::deep h2 {
+    margin: 48px 0 12px;
+    font-size: var(--mud-typography-h5-size);
+    font-weight: var(--mud-typography-h5-weight);
+    line-height: var(--mud-typography-h5-lineheight);
+    letter-spacing: var(--mud-typography-h5-letterspacing);
+}
+
+.prose ::deep p,
+.prose ::deep ul,
+.prose ::deep ol {
+    margin: 0 0 16px;
+}
+
+.prose ::deep p {
+    white-space: pre-line;
+}
+
+.prose ::deep a {
+    color: var(--mud-palette-primary);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.prose ::deep .prose__notice {
+    margin-bottom: 32px;
+    padding: 16px 20px;
+    border-left: 3px solid var(--mud-palette-primary);
+    border-radius: 0 var(--mud-default-borderradius) var(--mud-default-borderradius) 0;
+    background-color: var(--mud-palette-surface);
+    color: var(--mud-palette-text-secondary);
+}

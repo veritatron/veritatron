@@ -3,6 +3,7 @@ using Veritatron.AppHost;
 var builder = DistributedApplication.CreateBuilder(args);
 
 builder.AddProject<Projects.Veritatron_Web>(ResourceNames.Web)
-    .WithExternalHttpEndpoints();
+    .WithExternalHttpEndpoints()
+    .WithConfigurationSection(builder.Configuration, ConfigurationSections.Subsites);
 
 builder.Build().Run();

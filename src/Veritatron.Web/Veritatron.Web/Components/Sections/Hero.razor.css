@@ -1,0 +1,175 @@
+.hero {
+    position: relative;
+    overflow: hidden;
+    padding-block: 72px 88px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(var(--mud-palette-lines-default) 1px, transparent 1px),
+        linear-gradient(90deg, var(--mud-palette-lines-default) 1px, transparent 1px);
+    background-position: center top;
+    background-size: 56px 56px;
+    opacity: 0.7;
+    -webkit-mask-image: radial-gradient(ellipse 75% 65% at 72% 38%, var(--mud-palette-background) 15%, transparent 72%);
+    mask-image: radial-gradient(ellipse 75% 65% at 72% 38%, var(--mud-palette-background) 15%, transparent 72%);
+    pointer-events: none;
+}
+
+.hero__mark {
+    position: absolute;
+    top: 24px;
+    right: -28%;
+    width: 92vw;
+    max-width: 640px;
+    aspect-ratio: 1;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.hero__mark ::deep .logo-mark__left {
+    transform-box: fill-box;
+    animation:
+        stroke-from-below 1.2s cubic-bezier(0.2, 0.7, 0.2, 1) 0.1s both,
+        drift-down 7s ease-in-out 1.3s infinite alternate;
+}
+
+.hero__mark ::deep .logo-mark__right {
+    transform-box: fill-box;
+    animation:
+        stroke-from-above 1.2s cubic-bezier(0.2, 0.7, 0.2, 1) 0.1s both,
+        drift-up 7s ease-in-out 1.3s infinite alternate;
+}
+
+.hero__inner {
+    position: relative;
+}
+
+.hero__inner > * {
+    animation: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+.hero__inner > :nth-child(2) {
+    animation-delay: 0.08s;
+}
+
+.hero__inner > :nth-child(3) {
+    animation-delay: 0.16s;
+}
+
+.hero__inner > :nth-child(4) {
+    animation-delay: 0.24s;
+}
+
+.hero__title {
+    max-width: 15ch;
+    margin: 20px 0 24px;
+    font-size: clamp(2.75rem, 8vw, 5.5rem);
+    font-weight: var(--mud-typography-h1-weight);
+    line-height: 1.02;
+    letter-spacing: var(--mud-typography-h1-letterspacing);
+}
+
+.hero__title-line {
+    display: block;
+}
+
+.hero__title-line--accent {
+    color: var(--mud-palette-primary);
+}
+
+.hero__lead {
+    max-width: 52ch;
+    margin: 0;
+    color: var(--mud-palette-text-secondary);
+    font-size: clamp(1.0625rem, 1.8vw, var(--mud-typography-subtitle1-size));
+    line-height: var(--mud-typography-subtitle1-lineheight);
+}
+
+.hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 8px;
+    margin-top: 40px;
+}
+
+@keyframes rise {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes stroke-from-below {
+    from {
+        opacity: 0;
+        transform: translateY(120px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes stroke-from-above {
+    from {
+        opacity: 0;
+        transform: translateY(-120px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes drift-down {
+    from {
+        transform: none;
+    }
+
+    to {
+        transform: translateY(16px);
+    }
+}
+
+@keyframes drift-up {
+    from {
+        transform: none;
+    }
+
+    to {
+        transform: translateY(-16px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero__mark ::deep .logo-mark__left,
+    .hero__mark ::deep .logo-mark__right {
+        animation: none;
+    }
+}
+
+@media (min-width: 960px) {
+    .hero {
+        padding-block: 136px 136px;
+    }
+
+    .hero__mark {
+        top: 50%;
+        right: 4%;
+        width: 44vw;
+        max-width: 600px;
+        opacity: 0.7;
+        transform: translateY(-50%);
+    }
+}

@@ -7,10 +7,8 @@
     <BlazorDisableThrowNavigationException>true</BlazorDisableThrowNavigationException>
   </PropertyGroup>
 
-
   <ItemGroup>
-    <ProjectReference Include="..\Veritatron.Web.Client\Veritatron.Web.Client.csproj" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" />
+    <PackageReference Include="MudBlazor" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,31 @@
+﻿@attribute [Route(SitePaths.Home)]
+@inject IStringLocalizer<Home> Localizer
+@inject IOptions<SubsitesOptions> SubsitesOptions
+@inject NavigationManager Navigation
+
+<PageTitle>@Localizer["Title"]</PageTitle>
+<HeadContent>
+    <meta name="description" content="@Localizer["MetaDescription"]" />
+    <link rel="canonical" href="@Navigation.BaseUri" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="@SocialPreview.Locale" />
+    <meta property="og:site_name" content="@Localizer["SiteName"]" />
+    <meta property="og:title" content="@Localizer["Title"]" />
+    <meta property="og:description" content="@Localizer["MetaDescription"]" />
+    <meta property="og:url" content="@Navigation.BaseUri" />
+    <meta property="og:image" content="@ImageUrl" />
+    <meta property="og:image:type" content="@SocialPreview.ImageType" />
+    <meta property="og:image:width" content="@SocialPreview.ImageWidth" />
+    <meta property="og:image:height" content="@SocialPreview.ImageHeight" />
+    <meta property="og:image:alt" content="@Localizer["ImageAlt"]" />
+    <meta name="twitter:card" content="summary_large_image" />
+</HeadContent>
+
+<Hero />
+<ProjectGrid Subsites="SubsitesOptions.Value.Items" />
+<About />
+<WorkshopTeaser />
+
+@code {
+    private string ImageUrl => Navigation.ToAbsoluteUri(SocialPreview.ImagePath).ToString();
+}

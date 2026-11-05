@@ -1,0 +1,26 @@
+@attribute [Route(SitePaths.NotFound)]
+@layout MainLayout
+@inject IStringLocalizer<NotFound> Localizer
+
+<PageTitle>@Localizer["Title"]</PageTitle>
+<HeadContent>
+    <meta name="robots" content="noindex" />
+</HeadContent>
+
+<section class="vt-container vt-section not-found" aria-labelledby="@TitleId">
+    <p class="not-found__code" aria-hidden="true">@Localizer["Code"]</p>
+    <h1 id="@TitleId" class="not-found__title">@Localizer["Heading"]</h1>
+    <p class="not-found__text">@Localizer["Text"]</p>
+    <MudButton Href="@SitePaths.Home"
+               Variant="Variant.Filled"
+               Color="Color.Primary"
+               Size="Size.Large"
+               DropShadow="false"
+               StartIcon="@Icons.Material.Rounded.ArrowBack">
+        @Localizer["BackHome"]
+    </MudButton>
+</section>
+
+@code {
+    private const string TitleId = "not-found-title";
+}

@@ -1,0 +1,23 @@
+.section-header {
+    max-width: 640px;
+    margin-bottom: 40px;
+}
+
+.section-header__title {
+    margin: 16px 0 0;
+    font-size: clamp(1.875rem, 4vw, var(--mud-typography-h2-size));
+    font-weight: var(--mud-typography-h2-weight);
+    line-height: var(--mud-typography-h2-lineheight);
+    letter-spacing: var(--mud-typography-h2-letterspacing);
+}
+
+.section-header__intro {
+    margin: 16px 0 0;
+    color: var(--mud-palette-text-secondary);
+}
+
+@media (min-width: 960px) {
+    .section-header {
+        margin-bottom: 56px;
+    }
+}

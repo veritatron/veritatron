@@ -1,0 +1,6 @@
+@inject IStringLocalizer<Logo> Localizer
+
+<span class="logo" role="img" aria-label="@Localizer["AriaLabel"]">
+    <span class="mark"><LogoMark /></span>
+    <span class="wordmark" aria-hidden="true"><span class="wordmark-first">@Localizer["WordmarkFirst"]</span><span class="wordmark-second">@Localizer["WordmarkSecond"]</span></span>
+</span>
