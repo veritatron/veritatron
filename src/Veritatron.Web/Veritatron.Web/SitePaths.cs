@@ -21,6 +21,11 @@ namespace Veritatron.Web
         public const string Privacy = "/datenschutz";
 
         /// <summary>
+        /// The product page of words2widget.
+        /// </summary>
+        public const string Words2Widget = "/words2widget";
+
+        /// <summary>
         /// The page shown for unknown addresses.
         /// </summary>
         public const string NotFound = "/not-found";
@@ -49,6 +54,16 @@ namespace Veritatron.Web
         /// Element id of the about section on the start page.
         /// </summary>
         public const string AboutSectionId = "ueber";
+
+        /// <summary>
+        /// Element id of the quickstart section on the words2widget page.
+        /// </summary>
+        public const string QuickstartSectionId = "schnellstart";
+
+        /// <summary>
+        /// Link to the quickstart section of the words2widget page.
+        /// </summary>
+        public const string Words2WidgetQuickstart = $"{Words2Widget}#{QuickstartSectionId}";
 
         /// <summary>
         /// Link to the projects section from any page.

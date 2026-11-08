@@ -1,0 +1,219 @@
+@attribute [Route(SitePaths.Words2Widget)]
+@inject IStringLocalizer<Words2Widget> Localizer
+@inject IStringLocalizer<Home> HomeLocalizer
+@inject NavigationManager Navigation
+
+<PageTitle>@Localizer["Title"]</PageTitle>
+<HeadContent>
+    <meta name="description" content="@Localizer["MetaDescription"]" />
+    <link rel="canonical" href="@PageUrl" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="@SocialPreview.Locale" />
+    <meta property="og:site_name" content="@HomeLocalizer["SiteName"]" />
+    <meta property="og:title" content="@Localizer["Title"]" />
+    <meta property="og:description" content="@Localizer["MetaDescription"]" />
+    <meta property="og:url" content="@PageUrl" />
+    <meta property="og:image" content="@ImageUrl" />
+    <meta property="og:image:type" content="@SocialPreview.ImageType" />
+    <meta property="og:image:width" content="@SocialPreview.ImageWidth" />
+    <meta property="og:image:height" content="@SocialPreview.ImageHeight" />
+    <meta property="og:image:alt" content="@HomeLocalizer["ImageAlt"]" />
+    <meta name="twitter:card" content="summary_large_image" />
+</HeadContent>
+
+<section class="product-hero" aria-labelledby="@HeroTitleId">
+    <div class="vt-container product-hero__inner">
+        <div class="product-hero__content">
+            <p class="vt-overline">@Localizer["Eyebrow"]</p>
+            <h1 id="@HeroTitleId" class="product-hero__title">@Localizer["Name"]</h1>
+            <p class="product-hero__claim">@Localizer["Claim"]</p>
+            <p class="product-hero__lead">@Localizer["Lead"]</p>
+            <div class="product-hero__actions">
+                <MudButton Href="@SitePaths.Words2WidgetQuickstart"
+                           Variant="Variant.Filled"
+                           Color="Color.Primary"
+                           Size="Size.Large"
+                           DropShadow="false"
+                           EndIcon="@Icons.Material.Rounded.ArrowDownward">
+                    @Localizer["PrimaryAction"]
+                </MudButton>
+                <MudButton Href="@Words2WidgetLinks.Repository" Target="@SiteLinks.NewTabTarget"
+                           Variant="Variant.Text"
+                           Color="Color.Secondary"
+                           Size="Size.Large"
+                           StartIcon="@Icons.Custom.Brands.GitHub">
+                    @Localizer["SecondaryAction"]
+                </MudButton>
+            </div>
+            <ul class="product-hero__facts">
+                <li>@Localizer["FactFree"]</li>
+                <li>@Localizer["FactNoCode"]</li>
+                <li>@Localizer["FactAnyAi"]</li>
+            </ul>
+        </div>
+        <WidgetDemo />
+    </div>
+</section>
+
+<section class="vt-section product-section" aria-labelledby="@ExamplesTitleId">
+    <div class="vt-container">
+        <SectionHeader TitleId="@ExamplesTitleId"
+                       Overline="@Localizer["ExamplesOverline"]"
+                       Title="@Localizer["ExamplesTitle"]"
+                       Intro="@Localizer["ExamplesIntro"]" />
+        <WidgetExamples />
+    </div>
+</section>
+
+<section id="@SitePaths.QuickstartSectionId" class="vt-section product-section" aria-labelledby="@QuickstartTitleId">
+    <div class="vt-container">
+        <SectionHeader TitleId="@QuickstartTitleId"
+                       Overline="@Localizer["QuickstartOverline"]"
+                       Title="@Localizer["QuickstartTitle"]"
+                       Intro="@Localizer["QuickstartIntro"]" />
+
+        <h3 class="steps-heading">
+            <span class="steps-heading__part">@Localizer["SetupPart"]</span>
+            @Localizer["SetupHeading"]
+        </h3>
+        <ol class="steps">
+            <li class="steps__item">
+                <h4 class="steps__title">@Localizer["SetupScriptableTitle"]</h4>
+                <p class="steps__text">@Localizer["SetupScriptableText"]</p>
+                <div class="steps__action">
+                    <MudButton Href="@Words2WidgetLinks.Scriptable"
+                               Target="@SiteLinks.NewTabTarget"
+                               Variant="Variant.Outlined"
+                               Color="Color.Primary"
+                               StartIcon="@Icons.Material.Rounded.Download">
+                        @Localizer["SetupScriptableLink"]
+                    </MudButton>
+                </div>
+            </li>
+            <li class="steps__item">
+                <h4 class="steps__title">@Localizer["SetupCopyTitle"]</h4>
+                <p class="steps__text">@Localizer["SetupCopyText"]</p>
+                <div class="steps__action">
+                    <MudButton Variant="Variant.Filled"
+                               Color="Color.Primary"
+                               DropShadow="false"
+                               StartIcon="@Icons.Material.Rounded.ContentCopy"
+                               data-copy-target="@InstallerCodeId"
+                               data-copy-success="@Localizer["SetupCopySuccess"].Value"
+                               data-copy-failure="@Localizer["SetupCopyFailure"].Value">
+                        <span data-copy-label aria-live="polite">@Localizer["SetupCopyButton"]</span>
+                    </MudButton>
+                </div>
+                <details class="code">
+                    <summary class="code__toggle">@Localizer["SetupCopyShowCode"]</summary>
+                    <pre class="code__block" id="@InstallerCodeId">@Words2WidgetInstaller.Code</pre>
+                </details>
+            </li>
+            <li class="steps__item">
+                <h4 class="steps__title">@Localizer["SetupPasteTitle"]</h4>
+                <p class="steps__text">@Localizer["SetupPasteText"]</p>
+            </li>
+            <li class="steps__item">
+                <h4 class="steps__title">@Localizer["SetupTeachTitle"]</h4>
+                <p class="steps__text">@Localizer["SetupTeachText"]</p>
+                <div class="choices">
+                    <div class="choices__card">
+                        <h5 class="choices__title">@Localizer["SetupClaudeTitle"]</h5>
+                        <p class="choices__text">@Localizer["SetupClaudeText"]</p>
+                        <a class="steps__link" href="@Words2WidgetLinks.ClaudeSkill" target="@SiteLinks.NewTabTarget">@Localizer["SetupClaudeLink"]</a>
+                    </div>
+                    <div class="choices__card">
+                        <h5 class="choices__title">@Localizer["SetupOtherTitle"]</h5>
+                        <p class="choices__text">@Localizer["SetupOtherText"]</p>
+                        <a class="steps__link" href="@Words2WidgetLinks.Prompt" target="@SiteLinks.NewTabTarget">@Localizer["SetupOtherLink"]</a>
+                    </div>
+                </div>
+            </li>
+        </ol>
+
+        <h3 class="steps-heading">
+            <span class="steps-heading__part">@Localizer["MakePart"]</span>
+            @Localizer["MakeHeading"]
+        </h3>
+        <p class="steps-note">@Localizer["MakeCaution"]</p>
+        <ol class="steps">
+            @foreach (var step in MakeSteps)
+            {
+                <li class="steps__item">
+                    <h4 class="steps__title">@Localizer[$"Make{step}Title"]</h4>
+                    <p class="steps__text">@Localizer[$"Make{step}Text"]</p>
+                </li>
+            }
+        </ol>
+    </div>
+</section>
+
+<section class="vt-section product-section" aria-labelledby="@IdeasTitleId">
+    <div class="vt-container">
+        <SectionHeader TitleId="@IdeasTitleId"
+                       Overline="@Localizer["IdeasOverline"]"
+                       Title="@Localizer["IdeasTitle"]"
+                       Intro="@Localizer["IdeasIntro"]" />
+        <WidgetIdeas />
+    </div>
+</section>
+
+<section class="vt-section product-section" aria-labelledby="@FaqTitleId">
+    <div class="vt-container">
+        <SectionHeader TitleId="@FaqTitleId"
+                       Overline="@Localizer["FaqOverline"]"
+                       Title="@Localizer["FaqTitle"]" />
+        <div class="faq">
+            @foreach (var question in Questions)
+            {
+                <details class="faq__item">
+                    <summary class="faq__question">@Localizer[$"Faq{question}Question"]</summary>
+                    <p class="faq__answer">@Localizer[$"Faq{question}Answer"]</p>
+                </details>
+            }
+        </div>
+    </div>
+</section>
+
+<section class="vt-section product-section" aria-labelledby="@DevelopersTitleId">
+    <div class="vt-container">
+        <SectionHeader TitleId="@DevelopersTitleId"
+                       Overline="@Localizer["DevelopersOverline"]"
+                       Title="@Localizer["DevelopersTitle"]"
+                       Intro="@Localizer["DevelopersIntro"]" />
+        <ul class="decisions">
+            @foreach (var decision in Decisions)
+            {
+                <li class="decisions__item">
+                    <h3 class="decisions__title">@Localizer[$"Decision{decision}Title"]</h3>
+                    <p class="decisions__text">@Localizer[$"Decision{decision}Text"]</p>
+                </li>
+            }
+        </ul>
+        <MudButton Href="@Words2WidgetLinks.Repository" Target="@SiteLinks.NewTabTarget"
+                   Variant="Variant.Outlined"
+                   Color="Color.Primary"
+                   Size="Size.Large"
+                   StartIcon="@Icons.Custom.Brands.GitHub">
+            @Localizer["DevelopersAction"]
+        </MudButton>
+    </div>
+</section>
+
+@code {
+    private const string HeroTitleId = "words2widget-title";
+    private const string ExamplesTitleId = "examples-title";
+    private const string QuickstartTitleId = "quickstart-title";
+    private const string IdeasTitleId = "ideas-title";
+    private const string FaqTitleId = "faq-title";
+    private const string DevelopersTitleId = "developers-title";
+    private const string InstallerCodeId = "widget-installer-code";
+
+    private static readonly string[] MakeSteps = ["Ask", "Copy", "Save", "Place"];
+    private static readonly string[] Questions = ["Coding", "Safety", "Cost", "NoWidget", "Refresh"];
+    private static readonly string[] Decisions = ["NoBackend", "AnyAi", "Safe", "OneFile", "Checks", "Device"];
+
+    private string PageUrl => Navigation.ToAbsoluteUri(SitePaths.Words2Widget).ToString();
+
+    private string ImageUrl => Navigation.ToAbsoluteUri(SocialPreview.ImagePath).ToString();
+}

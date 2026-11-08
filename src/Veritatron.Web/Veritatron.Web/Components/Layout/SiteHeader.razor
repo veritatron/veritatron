@@ -7,6 +7,12 @@
             <ul class="site-header__nav">
                 <li><a href="@SitePaths.Projects" class="site-header__link">@Localizer["Projects"]</a></li>
                 <li><a href="@SitePaths.About" class="site-header__link">@Localizer["About"]</a></li>
+                <li>
+                    <a href="@SiteLinks.GitHub" target="@SiteLinks.NewTabTarget" class="site-header__link site-header__link--icon" aria-label="@Localizer["GitHub"]">
+                        <MudIcon Icon="@Icons.Custom.Brands.GitHub" Size="Size.Small" />
+                        <span class="site-header__label">@Localizer["GitHub"]</span>
+                    </a>
+                </li>
             </ul>
         </nav>
     </div>

@@ -24,6 +24,7 @@
 
 .site-header__nav {
     display: flex;
+    align-items: center;
     gap: 20px;
     margin: 0;
     padding: 0;
@@ -48,7 +49,21 @@
     background-size: 100% 2px;
 }
 
+.site-header__link--icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.site-header__label {
+    display: none;
+}
+
 @media (min-width: 600px) {
+    .site-header__label {
+        display: inline;
+    }
+
     .site-header__brand {
         font-size: 1.5rem;
     }

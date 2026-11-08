@@ -19,27 +19,9 @@
     <value>Was ist Veritatron?</value>
   </data>
   <data name="Paragraph1" xml:space="preserve">
-    <value>Der Name verbindet das lateinische veritas – Wahrheit – mit der Präzision einer Maschine. Dafür steht Veritatron: digitale Werkzeuge, die ehrlich sagen, was sie tun, und genau das zuverlässig erledigen.</value>
+    <value>Veritatron ist mein persönliches Projekt als Softwareentwickler. Hier veröffentliche ich, was ich selbst baue.</value>
   </data>
   <data name="Paragraph2" xml:space="preserve">
-    <value>Unter der Dachmarke entstehen eigenständige Webseiten und Anwendungen. Sie teilen sich eine Haltung, ein Erscheinungsbild und einen gemeinsamen Einstieg – diese Seite.</value>
-  </data>
-  <data name="Principle1Title" xml:space="preserve">
-    <value>Klar</value>
-  </data>
-  <data name="Principle1Text" xml:space="preserve">
-    <value>Jedes Projekt löst eine Aufgabe und erklärt sich selbst. Keine versteckten Funktionen, keine Umwege.</value>
-  </data>
-  <data name="Principle2Title" xml:space="preserve">
-    <value>Unabhängig</value>
-  </data>
-  <data name="Principle2Text" xml:space="preserve">
-    <value>Kein Tracking, keine Werbung, keine Abhängigkeit von großen Plattformen. Deine Daten bleiben deine.</value>
-  </data>
-  <data name="Principle3Title" xml:space="preserve">
-    <value>Langlebig</value>
-  </data>
-  <data name="Principle3Text" xml:space="preserve">
-    <value>Solide Technik statt kurzlebiger Trends – gebaut, um gepflegt zu werden und lange zu laufen.</value>
+    <value>Geld verdienen möchte ich damit nicht. Alles ist Open Source unter der MIT-Lizenz, du kannst es frei nutzen und verändern.</value>
   </data>
 </root>

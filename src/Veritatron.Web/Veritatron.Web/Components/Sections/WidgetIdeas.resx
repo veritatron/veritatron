@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CategoryDaily" xml:space="preserve"><value>Alltag</value></data>
+  <data name="CategoryWeather" xml:space="preserve"><value>Wetter</value></data>
+  <data name="CategoryOpenData" xml:space="preserve"><value>Energie &amp; Umwelt</value></data>
+  <data name="CategoryDevelopers" xml:space="preserve"><value>Entwicklung</value></data>
+  <data name="CategoryPersonal" xml:space="preserve"><value>Persönlich</value></data>
+
+  <data name="TrashTitle" xml:space="preserve"><value>Müllabfuhr morgen</value></data>
+  <data name="TrashValue" xml:space="preserve"><value>Gelbe Tonne</value></data>
+  <data name="TrashNote" xml:space="preserve"><value>Heute Abend rausstellen</value></data>
+  <data name="TrashFirstLabel" xml:space="preserve"><value>Abholung</value></data>
+  <data name="TrashFirstValue" xml:space="preserve"><value>ab 6:00</value></data>
+  <data name="TrashSecondLabel" xml:space="preserve"><value>Restmüll</value></data>
+  <data name="TrashSecondValue" xml:space="preserve"><value>Freitag</value></data>
+  <data name="TrashThirdLabel" xml:space="preserve"><value>Papier</value></data>
+  <data name="TrashThirdValue" xml:space="preserve"><value>in 9 Tagen</value></data>
+  <data name="TrashText" xml:space="preserve"><value>Welche Tonne raus muss, aus der ICS-Datei des Entsorgers</value></data>
+
+  <data name="BikeTitle" xml:space="preserve"><value>Radwetter · Köln</value></data>
+  <data name="BikeValue" xml:space="preserve"><value>Aufs Rad</value></data>
+  <data name="BikeNote" xml:space="preserve"><value>Trocken bis 18 Uhr</value></data>
+  <data name="BikeFirstLabel" xml:space="preserve"><value>Wind</value></data>
+  <data name="BikeFirstValue" xml:space="preserve"><value>12 km/h</value></data>
+  <data name="BikeSecondLabel" xml:space="preserve"><value>Regen</value></data>
+  <data name="BikeSecondValue" xml:space="preserve"><value>5 %</value></data>
+  <data name="BikeThirdLabel" xml:space="preserve"><value>Gefühlt</value></data>
+  <data name="BikeThirdValue" xml:space="preserve"><value>14°</value></data>
+  <data name="BikeText" xml:space="preserve"><value>Wind, Regen der nächsten Stunden und Temperatur als eine Ampel</value></data>
+
+  <data name="PowerTitle" xml:space="preserve"><value>Strompreis</value></data>
+  <data name="PowerValue" xml:space="preserve"><value>13–15 Uhr</value></data>
+  <data name="PowerNote" xml:space="preserve"><value>Beste Zeit zum Waschen</value></data>
+  <data name="PowerFirstLabel" xml:space="preserve"><value>Jetzt</value></data>
+  <data name="PowerFirstValue" xml:space="preserve"><value>31 ct</value></data>
+  <data name="PowerSecondLabel" xml:space="preserve"><value>Tiefstpreis</value></data>
+  <data name="PowerSecondValue" xml:space="preserve"><value>18 ct</value></data>
+  <data name="PowerThirdLabel" xml:space="preserve"><value>Höchstpreis</value></data>
+  <data name="PowerThirdValue" xml:space="preserve"><value>42 ct</value></data>
+  <data name="PowerText" xml:space="preserve"><value>Die günstigsten Stunden zum Waschen oder Laden</value></data>
+
+  <data name="RiverTitle" xml:space="preserve"><value>Rheinpegel · Köln</value></data>
+  <data name="RiverValue" xml:space="preserve"><value>3,42 m</value></data>
+  <data name="RiverNote" xml:space="preserve"><value>Steigt, kein Hochwasser</value></data>
+  <data name="RiverFirstLabel" xml:space="preserve"><value>Seit gestern</value></data>
+  <data name="RiverFirstValue" xml:space="preserve"><value>+18 cm</value></data>
+  <data name="RiverSecondLabel" xml:space="preserve"><value>Warnstufe</value></data>
+  <data name="RiverSecondValue" xml:space="preserve"><value>6,20 m</value></data>
+  <data name="RiverThirdLabel" xml:space="preserve"><value>Abstand</value></data>
+  <data name="RiverThirdValue" xml:space="preserve"><value>2,78 m</value></data>
+  <data name="RiverText" xml:space="preserve"><value>Flusspegel mit Trend und Hochwasser-Schwelle</value></data>
+
+  <data name="CiTitle" xml:space="preserve"><value>CI-Status</value></data>
+  <data name="CiValue" xml:space="preserve"><value>Alles grün</value></data>
+  <data name="CiNote" xml:space="preserve"><value>Letzter Lauf vor 12 Min</value></data>
+  <data name="CiFirstLabel" xml:space="preserve"><value>Build</value></data>
+  <data name="CiFirstValue" xml:space="preserve"><value>OK</value></data>
+  <data name="CiSecondLabel" xml:space="preserve"><value>Tests</value></data>
+  <data name="CiSecondValue" xml:space="preserve"><value>214/214</value></data>
+  <data name="CiThirdLabel" xml:space="preserve"><value>Deploy</value></data>
+  <data name="CiThirdValue" xml:space="preserve"><value>OK</value></data>
+  <data name="CiText" xml:space="preserve"><value>Die letzten Pipeline-Runs deiner Projekte</value></data>
+
+  <data name="CountdownTitle" xml:space="preserve"><value>Nächste Termine</value></data>
+  <data name="CountdownValue" xml:space="preserve"><value>5 Tage</value></data>
+  <data name="CountdownNote" xml:space="preserve"><value>Bis zum Konzert</value></data>
+  <data name="CountdownFirstLabel" xml:space="preserve"><value>Geburtstag</value></data>
+  <data name="CountdownFirstValue" xml:space="preserve"><value>19 Tage</value></data>
+  <data name="CountdownSecondLabel" xml:space="preserve"><value>Urlaub</value></data>
+  <data name="CountdownSecondValue" xml:space="preserve"><value>31 Tage</value></data>
+  <data name="CountdownThirdLabel" xml:space="preserve"><value>Umzug</value></data>
+  <data name="CountdownThirdValue" xml:space="preserve"><value>64 Tage</value></data>
+  <data name="CountdownText" xml:space="preserve"><value>Mehrere Events auf einen Blick</value></data>
+</root>

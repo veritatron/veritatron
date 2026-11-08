@@ -13,16 +13,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Eyebrow" xml:space="preserve">
-    <value>Dachmarke für digitale Projekte</value>
+    <value>Veritatron</value>
   </data>
   <data name="TitleLead" xml:space="preserve">
-    <value>Klare Werkzeuge.</value>
+    <value>Alle Projekte</value>
   </data>
   <data name="TitleAccent" xml:space="preserve">
-    <value>Ehrlich gebaut.</value>
+    <value>von Veritatron.</value>
   </data>
   <data name="Lead" xml:space="preserve">
-    <value>Veritatron vereint Webseiten und Anwendungen, die eine Aufgabe gut lösen – ohne Ballast, ohne Tracking, mit Sorgfalt im Detail.</value>
+    <value>Hier findest du alles, was unter dem Namen Veritatron entsteht: fertige Produkte und Projekte, an denen gerade gearbeitet wird.</value>
   </data>
   <data name="PrimaryAction" xml:space="preserve">
     <value>Projekte ansehen</value>

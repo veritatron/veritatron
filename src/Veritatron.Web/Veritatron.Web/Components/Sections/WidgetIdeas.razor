@@ -1,0 +1,33 @@
+@inject IStringLocalizer<WidgetIdeas> Localizer
+
+<ul class="ideas">
+    @foreach (var (key, category, icon) in Ideas)
+    {
+        <li class="idea">
+            <p class="idea__category">@Localizer[$"Category{category}"]</p>
+            <WidgetCard Title="@Localizer[$"{key}Title"]"
+                        Icon="@icon"
+                        Value="@Localizer[$"{key}Value"]"
+                        Note="@Localizer[$"{key}Note"]"
+                        Facts="@FactsOf(key)" />
+            <p class="idea__text">@Localizer[$"{key}Text"]</p>
+        </li>
+    }
+</ul>
+
+@code {
+    private static readonly (string Key, string Category, string Icon)[] Ideas =
+    [
+        ("Trash", "Daily", Icons.Material.Rounded.DeleteOutline),
+        ("Bike", "Weather", Icons.Material.Rounded.DirectionsBike),
+        ("Power", "OpenData", Icons.Material.Rounded.Bolt),
+        ("River", "OpenData", Icons.Material.Rounded.Water),
+        ("Ci", "Developers", Icons.Material.Rounded.TaskAlt),
+        ("Countdown", "Personal", Icons.Material.Rounded.HourglassBottom),
+    ];
+
+    private static readonly string[] Facts = ["First", "Second", "Third"];
+
+    private List<(string Label, string Value)> FactsOf(string key) =>
+        Facts.Select(fact => (Localizer[$"{key}{fact}Label"].Value, Localizer[$"{key}{fact}Value"].Value)).ToList();
+}

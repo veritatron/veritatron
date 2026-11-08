@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Title" xml:space="preserve"><value>words2widget – iPhone-Widgets aus einem Satz | Veritatron</value></data>
+  <data name="MetaDescription" xml:space="preserve"><value>Beschreibe dein Wunsch-Widget in einem Satz und deine KI baut es für Scriptable. Kostenlos, ohne Programmieren, mit ChatGPT, Gemini, Claude und anderen.</value></data>
+  <data name="Eyebrow" xml:space="preserve"><value>Mein erstes Produkt</value></data>
+  <data name="Name" xml:space="preserve"><value>words2widget</value></data>
+  <data name="Claim" xml:space="preserve"><value>Sag, was du willst. Deine KI baut das Widget.</value></data>
+  <data name="Lead" xml:space="preserve"><value>Die meisten Widgets zeigen dir Zahlen. Deins kann dir sagen, was zu tun ist. Ein Satz genügt, und auf deinem iPhone-Home-Bildschirm steht genau das Widget, das du dir immer gewünscht hast.</value></data>
+  <data name="PrimaryAction" xml:space="preserve"><value>Zum Schnellstart</value></data>
+  <data name="SecondaryAction" xml:space="preserve"><value>Auf GitHub ansehen</value></data>
+  <data name="FactFree" xml:space="preserve"><value>Kostenlos und MIT-lizenziert</value></data>
+  <data name="FactNoCode" xml:space="preserve"><value>Ohne Programmieren</value></data>
+  <data name="FactAnyAi" xml:space="preserve"><value>Mit jeder KI</value></data>
+
+  <data name="ExamplesOverline" xml:space="preserve"><value>Beispiele</value></data>
+  <data name="ExamplesTitle" xml:space="preserve"><value>Widgets, die dir etwas sagen</value></data>
+  <data name="ExamplesIntro" xml:space="preserve"><value>Ein paar Ideen zum Start. Hast du eine eigene? Beschreib sie in einem Satz.</value></data>
+
+  <data name="QuickstartOverline" xml:space="preserve"><value>Schnellstart</value></data>
+  <data name="QuickstartTitle" xml:space="preserve"><value>So kommt dein Widget aufs iPhone</value></data>
+  <data name="QuickstartIntro" xml:space="preserve"><value>Öffne diese Seite auf deinem iPhone. Mache Teil 1 einmal. Mache Teil 2 für jedes neue Widget.</value></data>
+  <data name="SetupPart" xml:space="preserve"><value>Teil 1</value></data>
+  <data name="SetupHeading" xml:space="preserve"><value>Einmal einrichten</value></data>
+  <data name="SetupScriptableTitle" xml:space="preserve"><value>Scriptable installieren</value></data>
+  <data name="SetupScriptableText" xml:space="preserve"><value>Drücke auf den Button und installiere die kostenlose App Scriptable.</value></data>
+  <data name="SetupScriptableLink" xml:space="preserve"><value>Zum App Store</value></data>
+  <data name="SetupCopyTitle" xml:space="preserve"><value>Installer-Code kopieren</value></data>
+  <data name="SetupCopyText" xml:space="preserve"><value>Drücke auf den Button, um den Code zu kopieren.</value></data>
+  <data name="SetupCopyButton" xml:space="preserve"><value>Code kopieren</value></data>
+  <data name="SetupCopySuccess" xml:space="preserve"><value>Kopiert!</value></data>
+  <data name="SetupCopyFailure" xml:space="preserve"><value>Bitte unten von Hand kopieren</value></data>
+  <data name="SetupCopyShowCode" xml:space="preserve"><value>Code ansehen</value></data>
+  <data name="SetupPasteTitle" xml:space="preserve"><value>In Scriptable einfügen</value></data>
+  <data name="SetupPasteText" xml:space="preserve"><value>Öffne Scriptable. Drücke auf + und füge den Code ein. Drücke oben auf den Namen und gib „Widget Installer“ ein. Drücke auf „Done“.</value></data>
+  <data name="SetupTeachTitle" xml:space="preserve"><value>KI einrichten</value></data>
+  <data name="SetupTeachText" xml:space="preserve"><value>Wähle deine KI aus und folge den Schritten.</value></data>
+  <data name="SetupClaudeTitle" xml:space="preserve"><value>Claude</value></data>
+  <data name="SetupClaudeText" xml:space="preserve"><value>Drücke auf „Datei herunterladen“. Öffne die Einstellungen von Claude und lade die Datei unter „Skills“ hoch.</value></data>
+  <data name="SetupClaudeLink" xml:space="preserve"><value>Datei herunterladen</value></data>
+  <data name="SetupOtherTitle" xml:space="preserve"><value>ChatGPT, Gemini oder andere</value></data>
+  <data name="SetupOtherText" xml:space="preserve"><value>Drücke auf „Prompt öffnen“. Kopiere den Text und füge ihn in einen neuen Chat ein.</value></data>
+  <data name="SetupOtherLink" xml:space="preserve"><value>Prompt öffnen</value></data>
+
+  <data name="MakePart" xml:space="preserve"><value>Teil 2</value></data>
+  <data name="MakeHeading" xml:space="preserve"><value>Widget erstellen</value></data>
+  <data name="MakeCaution" xml:space="preserve"><value>Sicherheitshinweis: Gib deiner KI niemals Passwörter, Zugangsdaten oder andere vertrauliche Informationen weiter. Ein Widget ist ein eigenständiges Programm auf deinem iPhone. Es kann auf das Internet zugreifen und Daten übertragen. Zugriff auf Standort oder Kalender erhält es nur mit deiner Zustimmung.</value></data>
+  <data name="MakeAskTitle" xml:space="preserve"><value>Widget beschreiben</value></data>
+  <data name="MakeAskText" xml:space="preserve"><value>Schreibe deiner KI in einem Satz, was das Widget zeigen soll. Beantworte danach ihre Fragen zu Sprache und Stil.</value></data>
+  <data name="MakeCopyTitle" xml:space="preserve"><value>Code kopieren</value></data>
+  <data name="MakeCopyText" xml:space="preserve"><value>Drücke in der Antwort der KI auf den Kopieren-Button am Code.</value></data>
+  <data name="MakeSaveTitle" xml:space="preserve"><value>In Scriptable speichern</value></data>
+  <data name="MakeSaveText" xml:space="preserve"><value>Öffne Scriptable und drücke auf „Widget Installer“. Gib dem Widget einen Namen und drücke auf „Save“.</value></data>
+  <data name="MakePlaceTitle" xml:space="preserve"><value>Auf den Home-Bildschirm legen</value></data>
+  <data name="MakePlaceText" xml:space="preserve"><value>Halte den Home-Bildschirm gedrückt. Drücke auf „Bearbeiten“ und dann auf „Widget hinzufügen“. Wähle Scriptable und füge das Widget hinzu. Drücke auf das neue Widget und wähle dein Skript aus.</value></data>
+
+  <data name="IdeasOverline" xml:space="preserve"><value>Ideen</value></data>
+  <data name="IdeasTitle" xml:space="preserve"><value>Keine Idee, was du fragen sollst?</value></data>
+  <data name="IdeasIntro" xml:space="preserve"><value>Diese Beispiele zeigen, was möglich ist. Übernimm eine Idee oder passe sie an: Farben, Sprache und Inhalt änderst du mit einem Satz an deine KI. Alle Werte sind Beispieldaten.</value></data>
+
+  <data name="FaqOverline" xml:space="preserve"><value>Fragen</value></data>
+  <data name="FaqTitle" xml:space="preserve"><value>Häufige Fragen</value></data>
+  <data name="FaqCodingQuestion" xml:space="preserve"><value>Muss ich programmieren können?</value></data>
+  <data name="FaqCodingAnswer" xml:space="preserve"><value>Nein. Du musst den Code nie lesen oder ändern.</value></data>
+  <data name="FaqSafetyQuestion" xml:space="preserve"><value>Ist das sicher?</value></data>
+  <data name="FaqSafetyAnswer" xml:space="preserve"><value>Der Installer speichert deinen Code nur. Das Widget selbst ist aber ein Programm, das deine KI schreibt und das Scriptable auf deinem iPhone ausführt. Es kann Daten aus dem Internet laden und dorthin senden. Auf Standort oder Kalender kommt es nur, wenn du das erlaubst. Füge deshalb nur Code aus deinem eigenen KI-Chat ein und gib deiner KI nie Passwörter oder andere Geheimnisse.</value></data>
+  <data name="FaqCostQuestion" xml:space="preserve"><value>Was kostet das?</value></data>
+  <data name="FaqCostAnswer" xml:space="preserve"><value>Scriptable ist kostenlos und es gibt keine API-Schlüssel, die du bezahlen müsstest. Manche Widgets brauchen einen kostenlosen Schlüssel des jeweiligen Dienstes. PROMPT.md ist für kostenlose Chatbots ausgelegt. Ob du Skills hochladen kannst, hängt von deinem Claude-Tarif ab.</value></data>
+  <data name="FaqNoWidgetQuestion" xml:space="preserve"><value>Was tue ich, wenn „No widget found“ erscheint?</value></data>
+  <data name="FaqNoWidgetAnswer" xml:space="preserve"><value>Vermutlich fehlt ein Teil des Codes. Nutze die Kopieren-Schaltfläche am Codeblock und versuche es noch einmal.</value></data>
+  <data name="FaqRefreshQuestion" xml:space="preserve"><value>Warum aktualisiert sich mein Widget nicht?</value></data>
+  <data name="FaqRefreshAnswer" xml:space="preserve"><value>iOS entscheidet selbst, wann Widgets aktualisiert werden. Das kann eine Weile dauern.</value></data>
+
+  <data name="DevelopersOverline" xml:space="preserve"><value>Für Entwickler</value></data>
+  <data name="DevelopersTitle" xml:space="preserve"><value>Wie es gebaut ist</value></data>
+  <data name="DevelopersIntro" xml:space="preserve"><value>Ein Satz wird über deine KI zu einem Scriptable-Skript, und der Widget Installer legt es auf dem iPhone ab. Dahinter stehen ein paar bewusste Entscheidungen.</value></data>
+  <data name="DecisionNoBackendTitle" xml:space="preserve"><value>Kein Backend, keine API-Schlüssel</value></data>
+  <data name="DecisionNoBackendText" xml:space="preserve"><value>Alle nutzen die KI-App, die sie schon haben. So entstehen keine laufenden Kosten und es gibt keine Secrets, die abhandenkommen können.</value></data>
+  <data name="DecisionAnyAiTitle" xml:space="preserve"><value>Funktioniert mit jeder KI</value></data>
+  <data name="DecisionAnyAiText" xml:space="preserve"><value>Claude-Skill und Prompt teilen sich dieselben Regeln. Dem Installer ist egal, woher der Code kommt.</value></data>
+  <data name="DecisionSafeTitle" xml:space="preserve"><value>Der Installer speichert nur</value></data>
+  <data name="DecisionSafeText" xml:space="preserve"><value>Würde er Code ausführen oder etwas herunterladen, schlägt die CI fehl. Das fertige Widget läuft danach als normales Skript in Scriptable.</value></data>
+  <data name="DecisionOneFileTitle" xml:space="preserve"><value>Eine Datei pro Widget</value></data>
+  <data name="DecisionOneFileText" xml:space="preserve"><value>Scriptable kennt keinen Build-Schritt und keine Pakete. Jedes Beispiel bleibt in sich geschlossen und für eine KI leicht anpassbar.</value></data>
+  <data name="DecisionChecksTitle" xml:space="preserve"><value>Statische Prüfung im Pull Request</value></data>
+  <data name="DecisionChecksText" xml:space="preserve"><value>check.mjs parst jedes Skript und setzt die Plattformregeln durch, ohne eine einzige Abhängigkeit.</value></data>
+  <data name="DecisionDeviceTitle" xml:space="preserve"><value>Getestet auf echtem iPhone</value></data>
+  <data name="DecisionDeviceText" xml:space="preserve"><value>Jedes Beispiel und der ganze Weg vom Satz zum Widget wurden auf einem Gerät getestet, auch mit ChatGPT und Gemini.</value></data>
+  <data name="DevelopersAction" xml:space="preserve"><value>Quellcode auf GitHub</value></data>
+</root>

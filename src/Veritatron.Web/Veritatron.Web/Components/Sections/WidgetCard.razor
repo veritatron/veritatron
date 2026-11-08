@@ -1,0 +1,49 @@
+<div class="example">
+    <div class="example__verdict">
+        <p class="example__title">@Title</p>
+        <MudIcon Icon="@Icon" Color="Color.Primary" />
+        <p class="example__value">@Value</p>
+        <p class="example__note">@Note</p>
+    </div>
+    <dl class="example__facts">
+        @foreach (var (label, factValue) in Facts)
+        {
+            <div class="example__fact">
+                <dt>@label</dt>
+                <dd>@factValue</dd>
+            </div>
+        }
+    </dl>
+</div>
+
+@code {
+    /// <summary>
+    /// The widget's heading.
+    /// </summary>
+    [Parameter, EditorRequired]
+    public string Title { get; set; } = string.Empty;
+
+    /// <summary>
+    /// The icon shown above the main value.
+    /// </summary>
+    [Parameter, EditorRequired]
+    public string Icon { get; set; } = string.Empty;
+
+    /// <summary>
+    /// The main value the widget tells at a glance.
+    /// </summary>
+    [Parameter, EditorRequired]
+    public string Value { get; set; } = string.Empty;
+
+    /// <summary>
+    /// The short note below the main value.
+    /// </summary>
+    [Parameter, EditorRequired]
+    public string Note { get; set; } = string.Empty;
+
+    /// <summary>
+    /// The label and value pairs listed beside the main value.
+    /// </summary>
+    [Parameter, EditorRequired]
+    public IReadOnlyList<(string Label, string Value)> Facts { get; set; } = [];
+}

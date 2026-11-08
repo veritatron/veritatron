@@ -24,4 +24,7 @@
   <data name="About" xml:space="preserve">
     <value>Über</value>
   </data>
+  <data name="GitHub" xml:space="preserve">
+    <value>GitHub</value>
+  </data>
 </root>

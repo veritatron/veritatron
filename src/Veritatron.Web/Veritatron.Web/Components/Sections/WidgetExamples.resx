@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="WearTitle" xml:space="preserve"><value>Was anziehen</value></data>
+  <data name="WearValue" xml:space="preserve"><value>Warme Jacke</value></data>
+  <data name="WearNote" xml:space="preserve"><value>Mehr brauchst du nicht</value></data>
+  <data name="WearFirstLabel" xml:space="preserve"><value>Gefühlt</value></data>
+  <data name="WearFirstValue" xml:space="preserve"><value>8°</value></data>
+  <data name="WearSecondLabel" xml:space="preserve"><value>Tiefstwert</value></data>
+  <data name="WearSecondValue" xml:space="preserve"><value>6°</value></data>
+  <data name="WearThirdLabel" xml:space="preserve"><value>Regen</value></data>
+  <data name="WearThirdValue" xml:space="preserve"><value>2 %</value></data>
+
+  <data name="StarsTitle" xml:space="preserve"><value>Sterne heute Nacht</value></data>
+  <data name="StarsValue" xml:space="preserve"><value>19:00</value></data>
+  <data name="StarsNote" xml:space="preserve"><value>Klar bis 20:00</value></data>
+  <data name="StarsFirstLabel" xml:space="preserve"><value>Mond</value></data>
+  <data name="StarsFirstValue" xml:space="preserve"><value>2 %</value></data>
+  <data name="StarsSecondLabel" xml:space="preserve"><value>Klare Stunden</value></data>
+  <data name="StarsSecondValue" xml:space="preserve"><value>4</value></data>
+  <data name="StarsThirdLabel" xml:space="preserve"><value>Montag</value></data>
+  <data name="StarsThirdValue" xml:space="preserve"><value>11 h klar</value></data>
+
+  <data name="AirTitle" xml:space="preserve"><value>Frische Luft · Köln</value></data>
+  <data name="AirValue" xml:space="preserve"><value>Jetzt lüften</value></data>
+  <data name="AirNote" xml:space="preserve"><value>Den ganzen Tag gut</value></data>
+  <data name="AirFirstLabel" xml:space="preserve"><value>Regen</value></data>
+  <data name="AirFirstValue" xml:space="preserve"><value>0 %</value></data>
+  <data name="AirSecondLabel" xml:space="preserve"><value>Luft</value></data>
+  <data name="AirSecondValue" xml:space="preserve"><value>Gut</value></data>
+  <data name="AirThirdLabel" xml:space="preserve"><value>Pollen</value></data>
+  <data name="AirThirdValue" xml:space="preserve"><value>Keine</value></data>
+
+  <data name="SunsetTitle" xml:space="preserve"><value>Chance auf Abendrot · Köln</value></data>
+  <data name="SunsetValue" xml:space="preserve"><value>0 %</value></data>
+  <data name="SunsetNote" xml:space="preserve"><value>Lieber drinnen bleiben</value></data>
+  <data name="SunsetFirstLabel" xml:space="preserve"><value>Untergang</value></data>
+  <data name="SunsetFirstValue" xml:space="preserve"><value>16:55</value></data>
+  <data name="SunsetSecondLabel" xml:space="preserve"><value>Montag</value></data>
+  <data name="SunsetSecondValue" xml:space="preserve"><value>55 %</value></data>
+  <data name="SunsetThirdLabel" xml:space="preserve"><value>Dienstag</value></data>
+  <data name="SunsetThirdValue" xml:space="preserve"><value>59 %</value></data>
+</root>

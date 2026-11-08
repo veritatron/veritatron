@@ -1,0 +1,53 @@
+@inject IStringLocalizer<WidgetDemo> Localizer
+
+<div class="demo" role="img" aria-label="@Localizer["Alt"]">
+    <div class="demo__phone">
+        <span class="demo__island"></span>
+
+        <div class="demo__scene demo__scene--chat">
+            <p class="demo__bubble demo__bubble--user">
+                <span class="demo__typed">@Localizer["Prompt"]</span>
+            </p>
+            <div class="demo__bubble demo__bubble--ai">
+                <p class="demo__reply">
+                    <MudIcon Icon="@Icons.Material.Rounded.AutoAwesome" Size="Size.Small" Color="Color.Primary" />
+                    @Localizer["Reply"]
+                </p>
+                <span class="demo__code demo__code--long"></span>
+                <span class="demo__code demo__code--medium"></span>
+                <span class="demo__code demo__code--short"></span>
+            </div>
+        </div>
+
+        <div class="demo__scene demo__scene--home">
+            <div class="demo__widget">
+                <div class="demo__verdict">
+                    <p class="demo__widget-title">@Localizer["WidgetTitle"]</p>
+                    <span class="demo__signal"></span>
+                    <p class="demo__action">@Localizer["Action"]</p>
+                    <p class="demo__note">@Localizer["Note"]</p>
+                </div>
+                <dl class="demo__trips">
+                    <div class="demo__trip">
+                        <dt>@Localizer["OutboundLabel"]</dt>
+                        <dd>@Localizer["OutboundValue"]</dd>
+                    </div>
+                    <div class="demo__trip">
+                        <dt>@Localizer["ReturnLabel"] <span class="demo__next">@Localizer["Next"]</span></dt>
+                        <dd>@Localizer["ReturnValue"]</dd>
+                    </div>
+                </dl>
+            </div>
+            <div class="demo__apps">
+                @for (var index = 0; index < AppIconCount; index++)
+                {
+                    <span class="demo__app"></span>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private const int AppIconCount = 8;
+}

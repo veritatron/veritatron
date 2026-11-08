@@ -1,0 +1,29 @@
+@inject IStringLocalizer<WidgetExamples> Localizer
+
+<ul class="examples">
+    @foreach (var (key, icon) in Examples)
+    {
+        <li>
+            <WidgetCard Title="@Localizer[$"{key}Title"]"
+                        Icon="@icon"
+                        Value="@Localizer[$"{key}Value"]"
+                        Note="@Localizer[$"{key}Note"]"
+                        Facts="@FactsOf(key)" />
+        </li>
+    }
+</ul>
+
+@code {
+    private static readonly (string Key, string Icon)[] Examples =
+    [
+        ("Wear", Icons.Material.Rounded.Checkroom),
+        ("Stars", Icons.Material.Rounded.NightsStay),
+        ("Air", Icons.Material.Rounded.Air),
+        ("Sunset", Icons.Material.Rounded.WbTwilight),
+    ];
+
+    private static readonly string[] Facts = ["First", "Second", "Third"];
+
+    private List<(string Label, string Value)> FactsOf(string key) =>
+        Facts.Select(fact => (Localizer[$"{key}{fact}Label"].Value, Localizer[$"{key}{fact}Value"].Value)).ToList();
+}

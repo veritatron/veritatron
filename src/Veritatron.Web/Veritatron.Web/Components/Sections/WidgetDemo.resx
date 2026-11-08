@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Alt" xml:space="preserve"><value>Animation auf einem iPhone: Der Satz „Pendeln mit dem Auto: Köln–Bonn“ wird eingetippt, die KI baut daraus ein Widget, und auf dem Home-Bildschirm erscheint es mit der Empfehlung „Jetzt los“ und 30 Minuten für den Hinweg sowie 38 Minuten für den Rückweg.</value></data>
+  <data name="Prompt" xml:space="preserve"><value>Pendeln mit dem Auto: Köln–Bonn</value></data>
+  <data name="Reply" xml:space="preserve"><value>Ich baue dein Widget …</value></data>
+  <data name="WidgetTitle" xml:space="preserve"><value>Pendeln</value></data>
+  <data name="Action" xml:space="preserve"><value>Jetzt los</value></data>
+  <data name="Note" xml:space="preserve"><value>Kaum Verzögerung auf der Strecke</value></data>
+  <data name="OutboundLabel" xml:space="preserve"><value>Hin → Bonn</value></data>
+  <data name="OutboundValue" xml:space="preserve"><value>30 Min</value></data>
+  <data name="ReturnLabel" xml:space="preserve"><value>Rück → Köln</value></data>
+  <data name="Next" xml:space="preserve"><value>als Nächstes</value></data>
+  <data name="ReturnValue" xml:space="preserve"><value>38 Min</value></data>
+</root>
