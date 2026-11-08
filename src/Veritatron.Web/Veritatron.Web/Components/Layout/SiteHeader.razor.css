@@ -55,8 +55,15 @@
     gap: 6px;
 }
 
-.site-header__label {
+.site-header__label,
+.site-header__wide {
     display: none;
+}
+
+@media (min-width: 768px) {
+    .site-header__wide {
+        display: list-item;
+    }
 }
 
 @media (min-width: 600px) {

@@ -12,16 +12,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Overline" xml:space="preserve">
-    <value>Blog</value>
-  </data>
-  <data name="Title" xml:space="preserve">
-    <value>Wie die Projekte entstehen</value>
-  </data>
-  <data name="Text" xml:space="preserve">
-    <value>Hier erscheinen bald Berichte über die Technik und die Entscheidungen hinter den Projekten.</value>
-  </data>
-  <data name="Badge" xml:space="preserve">
-    <value>Bald</value>
-  </data>
+  <data name="Overline" xml:space="preserve"><value>Neuigkeiten</value></data>
+  <data name="Title" xml:space="preserve"><value>Was zuletzt passiert ist</value></data>
+  <data name="Words2WidgetRelease" xml:space="preserve"><value>words2widget 0.1.0 veröffentlicht</value></data>
 </root>

@@ -16,18 +16,18 @@
     <value>Veritatron</value>
   </data>
   <data name="TitleLead" xml:space="preserve">
-    <value>Alle Projekte</value>
+    <value>Software,</value>
   </data>
   <data name="TitleAccent" xml:space="preserve">
-    <value>von Veritatron.</value>
+    <value>die ich baue.</value>
   </data>
-  <data name="Lead" xml:space="preserve">
-    <value>Hier findest du alles, was unter dem Namen Veritatron entsteht: fertige Produkte und Projekte, an denen gerade gearbeitet wird.</value>
+  <data name="BadgeOpenSource" xml:space="preserve">
+    <value>Open Source</value>
   </data>
-  <data name="PrimaryAction" xml:space="preserve">
-    <value>Projekte ansehen</value>
+  <data name="BadgeLicense" xml:space="preserve">
+    <value>MIT-Lizenz</value>
   </data>
-  <data name="SecondaryAction" xml:space="preserve">
-    <value>Über Veritatron</value>
+  <data name="BadgeNoBusiness" xml:space="preserve">
+    <value>Ohne Geschäftsmodell</value>
   </data>
 </root>

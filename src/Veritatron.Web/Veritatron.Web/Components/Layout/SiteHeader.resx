@@ -24,6 +24,12 @@
   <data name="About" xml:space="preserve">
     <value>Über</value>
   </data>
+  <data name="Focus" xml:space="preserve">
+    <value>Schwerpunkte</value>
+  </data>
+  <data name="News" xml:space="preserve">
+    <value>Neuigkeiten</value>
+  </data>
   <data name="GitHub" xml:space="preserve">
     <value>GitHub</value>
   </data>

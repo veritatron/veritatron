@@ -1,26 +1,18 @@
-.projects__grid {
+.projects {
+    padding-bottom: 64px;
+    scroll-margin-top: var(--vt-header-height);
+}
+
+.projects__list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
-    gap: 20px;
-    margin: 0;
+    gap: 16px;
+    margin: 16px 0 0;
     padding: 0;
     list-style: none;
 }
 
-.projects__item {
-    display: flex;
-}
-
-.projects__empty {
-    margin: 0;
-    padding: 32px;
-    border: 1px dashed var(--mud-palette-lines-default);
-    border-radius: var(--mud-default-borderradius);
-    color: var(--mud-palette-text-secondary);
-}
-
 @media (min-width: 960px) {
-    .projects__grid {
-        gap: 24px;
+    .projects {
+        padding-bottom: 96px;
     }
 }

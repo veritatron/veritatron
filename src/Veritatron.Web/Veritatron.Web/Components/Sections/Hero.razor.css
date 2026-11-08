@@ -81,19 +81,22 @@
     color: var(--mud-palette-primary);
 }
 
-.hero__lead {
-    max-width: 52ch;
-    margin: 0;
-    color: var(--mud-palette-text-secondary);
-    font-size: clamp(1.0625rem, 1.8vw, var(--mud-typography-subtitle1-size));
-    line-height: var(--mud-typography-subtitle1-lineheight);
-}
-
-.hero__actions {
+.hero__badges {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px 8px;
-    margin-top: 40px;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hero__badges li {
+    padding: 4px 14px;
+    border: 1px solid var(--mud-palette-lines-default);
+    border-radius: 999px;
+    background-color: var(--mud-palette-surface);
+    color: var(--mud-palette-text-secondary);
+    font-size: var(--mud-typography-body2-size);
 }
 
 @keyframes rise {
@@ -161,7 +164,10 @@
 
 @media (min-width: 960px) {
     .hero {
-        padding-block: 136px 136px;
+        display: flex;
+        align-items: center;
+        min-height: 640px;
+        padding-block: 72px;
     }
 
     .hero__mark {

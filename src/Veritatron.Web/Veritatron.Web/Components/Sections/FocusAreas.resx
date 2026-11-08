@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Overline" xml:space="preserve"><value>Schwerpunkte</value></data>
+  <data name="Title" xml:space="preserve"><value>Woran ich arbeite</value></data>
+  <data name="BackendTitle" xml:space="preserve"><value>.NET und Backend</value></data>
+  <data name="BackendText" xml:space="preserve"><value>Serverseitige Anwendungen und APIs mit C# und ASP.NET Core.</value></data>
+  <data name="WebTitle" xml:space="preserve"><value>Web-Frontends</value></data>
+  <data name="WebText" xml:space="preserve"><value>Webanwendungen und Oberflächen, etwa mit Blazor.</value></data>
+  <data name="CloudTitle" xml:space="preserve"><value>Cloud und Betrieb</value></data>
+  <data name="CloudText" xml:space="preserve"><value>Container, Kubernetes, CI/CD und der Betrieb eigener Infrastruktur.</value></data>
+  <data name="AiTitle" xml:space="preserve"><value>KI-Werkzeuge</value></data>
+  <data name="AiText" xml:space="preserve"><value>Software, die KI im Alltag nutzbar macht, wie words2widget.</value></data>
+</root>

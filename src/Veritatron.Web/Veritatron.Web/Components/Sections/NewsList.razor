@@ -1,0 +1,30 @@
+@using System.Globalization
+@inject IStringLocalizer<NewsList> Localizer
+
+<section id="@SitePaths.NewsSectionId" class="vt-section news" aria-labelledby="@TitleId">
+    <div class="vt-container">
+        <SectionHeader TitleId="@TitleId"
+                       Overline="@Localizer["Overline"]"
+                       Title="@Localizer["Title"]" />
+        <ol class="news__list">
+            @foreach (var (date, key) in Entries)
+            {
+                <li class="news__item">
+                    <time class="news__date" datetime="@date.ToString(MachineDateFormat, CultureInfo.InvariantCulture)">@date.ToString(DisplayDateFormat, CultureInfo.CurrentCulture)</time>
+                    <p class="news__text">@Localizer[key]</p>
+                </li>
+            }
+        </ol>
+    </div>
+</section>
+
+@code {
+    private const string TitleId = "news-title";
+    private const string DisplayDateFormat = "d. MMMM yyyy";
+    private const string MachineDateFormat = "yyyy-MM-dd";
+
+    private static readonly (DateTimeOffset Date, string Key)[] Entries =
+    [
+        (new DateTimeOffset(2026, 11, 8, 0, 0, 0, TimeSpan.Zero), "Words2WidgetRelease"),
+    ];
+}

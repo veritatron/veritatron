@@ -21,10 +21,25 @@
     <meta name="twitter:card" content="summary_large_image" />
 </HeadContent>
 
+<nav class="product-bar" aria-label="@Localizer["ProductBarLabel"]">
+    <div class="vt-container product-bar__inner">
+        <a class="product-bar__back" href="@SitePaths.Projects">
+            <MudIcon Icon="@Icons.Material.Rounded.ArrowBack" Size="Size.Small" />
+            @Localizer["BackToProjects"]
+        </a>
+        <span class="product-bar__current" aria-current="page">@Localizer["Name"]</span>
+        <div class="product-bar__links">
+            @foreach (var (href, key) in BarLinks)
+            {
+                <a class="product-bar__link" href="@href">@Localizer[key]</a>
+            }
+        </div>
+    </div>
+</nav>
+
 <section class="product-hero" aria-labelledby="@HeroTitleId">
     <div class="vt-container product-hero__inner">
         <div class="product-hero__content">
-            <p class="vt-overline">@Localizer["Eyebrow"]</p>
             <h1 id="@HeroTitleId" class="product-hero__title">@Localizer["Name"]</h1>
             <p class="product-hero__claim">@Localizer["Claim"]</p>
             <p class="product-hero__lead">@Localizer["Lead"]</p>
@@ -148,7 +163,7 @@
     </div>
 </section>
 
-<section class="vt-section product-section" aria-labelledby="@IdeasTitleId">
+<section id="@SitePaths.IdeasSectionId" class="vt-section product-section" aria-labelledby="@IdeasTitleId">
     <div class="vt-container">
         <SectionHeader TitleId="@IdeasTitleId"
                        Overline="@Localizer["IdeasOverline"]"
@@ -158,7 +173,7 @@
     </div>
 </section>
 
-<section class="vt-section product-section" aria-labelledby="@FaqTitleId">
+<section id="@SitePaths.FaqSectionId" class="vt-section product-section" aria-labelledby="@FaqTitleId">
     <div class="vt-container">
         <SectionHeader TitleId="@FaqTitleId"
                        Overline="@Localizer["FaqOverline"]"
@@ -208,6 +223,13 @@
     private const string FaqTitleId = "faq-title";
     private const string DevelopersTitleId = "developers-title";
     private const string InstallerCodeId = "widget-installer-code";
+
+    private static readonly (string Href, string Key)[] BarLinks =
+    [
+        (SitePaths.Words2WidgetQuickstart, "BarQuickstart"),
+        (SitePaths.Words2WidgetIdeas, "BarIdeas"),
+        (SitePaths.Words2WidgetFaq, "BarFaq"),
+    ];
 
     private static readonly string[] MakeSteps = ["Ask", "Copy", "Save", "Place"];
     private static readonly string[] Questions = ["Coding", "Safety", "Cost", "NoWidget", "Refresh"];

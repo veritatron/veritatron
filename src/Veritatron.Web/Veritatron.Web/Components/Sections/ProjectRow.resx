@@ -12,10 +12,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ComingSoon" xml:space="preserve">
-    <value>Bald verfügbar</value>
-  </data>
-  <data name="InProgress" xml:space="preserve">
-    <value>In Arbeit</value>
-  </data>
+  <data name="Live" xml:space="preserve"><value>Online</value></data>
+  <data name="InProgress" xml:space="preserve"><value>In Arbeit</value></data>
 </root>

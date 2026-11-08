@@ -291,6 +291,33 @@
     }
 }
 
+@keyframes typing-fade {
+    0%,
+    4% {
+        opacity: 0;
+    }
+
+    12%,
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 599px) {
+    .demo__bubble--user {
+        max-width: 100%;
+        white-space: normal;
+    }
+
+    .demo__typed {
+        animation: typing-fade var(--demo-duration) linear infinite;
+    }
+
+    .demo__widget {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
 @media (prefers-reduced-motion: reduce) {
     .demo__scene--chat,
     .demo__scene--home,

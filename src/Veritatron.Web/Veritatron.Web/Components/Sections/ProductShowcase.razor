@@ -1,0 +1,36 @@
+@inject IStringLocalizer<ProductShowcase> Localizer
+
+<article class="showcase" aria-labelledby="@TitleId">
+    <div class="showcase__content">
+        <h2 id="@TitleId" class="showcase__name">@Localizer["Name"]</h2>
+        <p class="showcase__description">@Localizer["Description"]</p>
+        <ul class="showcase__facts">
+            <li>@Localizer["FactFree"]</li>
+            <li>@Localizer["FactLicense"]</li>
+            <li>@Localizer["FactAnyAi"]</li>
+        </ul>
+        <div class="showcase__actions">
+            <MudButton Href="@SitePaths.Words2Widget"
+                       Variant="Variant.Filled"
+                       Color="Color.Primary"
+                       Size="Size.Large"
+                       DropShadow="false"
+                       EndIcon="@Icons.Material.Rounded.ArrowForward">
+                @Localizer["Open"]
+            </MudButton>
+            <MudButton Href="@Words2WidgetLinks.Repository"
+                       Target="@SiteLinks.NewTabTarget"
+                       Variant="Variant.Text"
+                       Color="Color.Secondary"
+                       Size="Size.Large"
+                       StartIcon="@Icons.Custom.Brands.GitHub">
+                @Localizer["GitHub"]
+            </MudButton>
+        </div>
+    </div>
+    <WidgetDemo />
+</article>
+
+@code {
+    private const string TitleId = "showcase-title";
+}

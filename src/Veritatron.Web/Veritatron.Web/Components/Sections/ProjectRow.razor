@@ -1,0 +1,29 @@
+@inject IStringLocalizer<ProjectRow> Localizer
+
+@if (Subsite.IsLive)
+{
+    <a class="row row--live" href="@Subsite.Href">
+        <h3 class="row__name">@Subsite.Name</h3>
+        <p class="row__description">@Subsite.Description</p>
+        <span class="row__status">@Localizer["Live"]</span>
+        <span class="row__arrow" aria-hidden="true">
+            <MudIcon Icon="@Icons.Material.Rounded.ArrowForward" Size="Size.Small" />
+        </span>
+    </a>
+}
+else
+{
+    <div class="row">
+        <h3 class="row__name">@Subsite.Name</h3>
+        <p class="row__description">@Subsite.Description</p>
+        <span class="row__status">@Localizer["InProgress"]</span>
+    </div>
+}
+
+@code {
+    /// <summary>
+    /// The subsite the row shows.
+    /// </summary>
+    [Parameter, EditorRequired]
+    public Subsite Subsite { get; set; } = default!;
+}

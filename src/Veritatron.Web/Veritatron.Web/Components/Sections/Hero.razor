@@ -8,23 +8,11 @@
             <span class="hero__title-line">@Localizer["TitleLead"]</span>
             <span class="hero__title-line hero__title-line--accent">@Localizer["TitleAccent"]</span>
         </h1>
-        <p class="hero__lead">@Localizer["Lead"]</p>
-        <div class="hero__actions">
-            <MudButton Href="@SitePaths.Projects"
-                       Variant="Variant.Filled"
-                       Color="Color.Primary"
-                       Size="Size.Large"
-                       DropShadow="false"
-                       EndIcon="@Icons.Material.Rounded.ArrowDownward">
-                @Localizer["PrimaryAction"]
-            </MudButton>
-            <MudButton Href="@SitePaths.About"
-                       Variant="Variant.Text"
-                       Color="Color.Secondary"
-                       Size="Size.Large">
-                @Localizer["SecondaryAction"]
-            </MudButton>
-        </div>
+        <ul class="hero__badges">
+            <li>@Localizer["BadgeOpenSource"]</li>
+            <li>@Localizer["BadgeLicense"]</li>
+            <li>@Localizer["BadgeNoBusiness"]</li>
+        </ul>
     </div>
 </section>
 

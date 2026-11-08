@@ -12,16 +12,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Overline" xml:space="preserve">
+  <data name="Label" xml:space="preserve">
     <value>Projekte</value>
-  </data>
-  <data name="Title" xml:space="preserve">
-    <value>Aktuelle Projekte</value>
-  </data>
-  <data name="Intro" xml:space="preserve">
-    <value>Jedes Projekt hat eine kurze Beschreibung. Fertige Projekte kannst du direkt öffnen.</value>
-  </data>
-  <data name="Empty" xml:space="preserve">
-    <value>Noch ist nichts veröffentlicht.</value>
   </data>
 </root>
