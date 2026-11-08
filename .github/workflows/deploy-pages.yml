@@ -37,6 +37,10 @@ jobs:
         env:
           ASPNETCORE_ENVIRONMENT: Production
           ASPNETCORE_URLS: ${{ env.SOURCE_URL }}
+          Legal__Name: ${{ secrets.LEGAL_NAME }}
+          Legal__Street: ${{ secrets.LEGAL_STREET }}
+          Legal__City: ${{ secrets.LEGAL_CITY }}
+          Legal__Email: ${{ secrets.LEGAL_EMAIL }}
           Subsites__Items__0__Name: words2widget
           Subsites__Items__0__Description: Sag, was du willst. Deine KI baut das iPhone-Widget.
           Subsites__Items__0__Path: /words2widget

@@ -1,5 +1,6 @@
 @attribute [Route(SitePaths.Imprint)]
 @inject IStringLocalizer<Imprint> Localizer
+@inject IOptions<LegalOptions> LegalOptions
 
 <PageTitle>@Localizer["Title"]</PageTitle>
 <HeadContent>
@@ -11,18 +12,14 @@
     <Prose>
         <p class="vt-overline">@Localizer["Overline"]</p>
         <h1>@Localizer["Heading"]</h1>
-        @if (!string.IsNullOrEmpty(Localizer["Notice"]))
-        {
-            <p class="prose__notice">@Localizer["Notice"]</p>
-        }
 
         <h2>@Localizer["ProviderHeading"]</h2>
-        <p>@Localizer["ProviderText"]</p>
+        <p>@LegalOptions.Value.Name<br />@LegalOptions.Value.Street<br />@LegalOptions.Value.City</p>
 
         <h2>@Localizer["ContactHeading"]</h2>
-        <p>@Localizer["ContactText"]</p>
+        <p>@Localizer["ContactEmailLabel"] @LegalOptions.Value.Email</p>
 
         <h2>@Localizer["ResponsibleHeading"]</h2>
-        <p>@Localizer["ResponsibleText"]</p>
+        <p>@LegalOptions.Value.Name, @Localizer["ResponsibleAddress"]</p>
     </Prose>
 </div>

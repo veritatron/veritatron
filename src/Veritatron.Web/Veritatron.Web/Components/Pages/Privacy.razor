@@ -1,5 +1,6 @@
 @attribute [Route(SitePaths.Privacy)]
 @inject IStringLocalizer<Privacy> Localizer
+@inject IOptions<LegalOptions> LegalOptions
 
 <PageTitle>@Localizer["Title"]</PageTitle>
 <HeadContent>
@@ -17,7 +18,7 @@
         }
 
         <h2>@Localizer["ControllerHeading"]</h2>
-        <p>@Localizer["ControllerText"]</p>
+        <p>@LegalOptions.Value.Name<br />@LegalOptions.Value.Street<br />@LegalOptions.Value.City<br />@Localizer["ContactEmailLabel"] @LegalOptions.Value.Email</p>
 
         <h2>@Localizer["HostingHeading"]</h2>
         <p>@Localizer["HostingText"]</p>

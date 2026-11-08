@@ -30,12 +30,6 @@
   <data name="ControllerHeading" xml:space="preserve">
     <value>1. Verantwortlicher</value>
   </data>
-  <data name="ControllerText" xml:space="preserve">
-    <value>[Vor- und Nachname]
-[Straße und Hausnummer]
-[Postleitzahl und Ort]
-E-Mail: [E-Mail-Adresse]</value>
-  </data>
   <data name="HostingHeading" xml:space="preserve">
     <value>2. Hosting und Server-Logfiles</value>
   </data>
@@ -59,5 +53,8 @@ E-Mail: [E-Mail-Adresse]</value>
   </data>
   <data name="RightsText" xml:space="preserve">
     <value>Du hast das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung, auf Datenübertragbarkeit und auf Widerspruch (Art. 15 bis 21 DSGVO). Außerdem kannst du dich bei einer Datenschutz-Aufsichtsbehörde beschweren.</value>
+  </data>
+  <data name="ContactEmailLabel" xml:space="preserve">
+    <value>E-Mail:</value>
   </data>
 </root>

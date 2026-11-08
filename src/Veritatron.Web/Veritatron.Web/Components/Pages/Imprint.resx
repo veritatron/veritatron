@@ -24,27 +24,19 @@
   <data name="Heading" xml:space="preserve">
     <value>Impressum</value>
   </data>
-  <data name="Notice" xml:space="preserve">
-    <value>Platzhalter: Bitte alle Angaben in eckigen Klammern vor der Veröffentlichung ersetzen und diesen Hinweis leeren.</value>
-  </data>
   <data name="ProviderHeading" xml:space="preserve">
     <value>Angaben gemäß § 5 DDG</value>
-  </data>
-  <data name="ProviderText" xml:space="preserve">
-    <value>[Vor- und Nachname]
-[Straße und Hausnummer]
-[Postleitzahl und Ort]</value>
   </data>
   <data name="ContactHeading" xml:space="preserve">
     <value>Kontakt</value>
   </data>
-  <data name="ContactText" xml:space="preserve">
-    <value>E-Mail: [E-Mail-Adresse]</value>
-  </data>
   <data name="ResponsibleHeading" xml:space="preserve">
     <value>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</value>
   </data>
-  <data name="ResponsibleText" xml:space="preserve">
-    <value>[Vor- und Nachname, Anschrift wie oben]</value>
+  <data name="ContactEmailLabel" xml:space="preserve">
+    <value>E-Mail:</value>
+  </data>
+  <data name="ResponsibleAddress" xml:space="preserve">
+    <value>Anschrift wie oben</value>
   </data>
 </root>
