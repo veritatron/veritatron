@@ -114,9 +114,10 @@
 }
 
 .product-hero__facts li {
-    padding: 3px 12px;
+    padding: 4px 14px;
     border: 1px solid var(--mud-palette-lines-default);
     border-radius: 999px;
+    background-color: var(--mud-palette-surface);
     color: var(--mud-palette-text-secondary);
     font-size: var(--mud-typography-body2-size);
 }
@@ -292,28 +293,8 @@
     color: var(--mud-palette-text-secondary);
 }
 
-.decisions {
-    display: grid;
-    gap: 32px;
-    margin: 0 0 40px;
-    padding: 0;
-    list-style: none;
-}
-
-.decisions__title {
-    margin: 0 0 4px;
-    font-size: var(--mud-typography-subtitle1-size);
-    font-weight: 600;
-}
-
-.decisions__text {
-    margin: 0;
-    color: var(--mud-palette-text-secondary);
-}
-
 @media (min-width: 600px) {
-    .choices,
-    .decisions {
+    .choices {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
@@ -326,9 +307,5 @@
     .product-hero__inner {
         grid-template-columns: 5fr 6fr;
         gap: 64px;
-    }
-
-    .decisions {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }

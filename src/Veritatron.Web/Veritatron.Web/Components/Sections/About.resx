@@ -19,9 +19,9 @@
     <value>Was ist Veritatron?</value>
   </data>
   <data name="Paragraph1" xml:space="preserve">
-    <value>Veritatron ist mein persönliches Projekt als Softwareentwickler. Hier veröffentliche ich, was ich selbst baue.</value>
+    <value>Unter dem Namen Veritatron veröffentliche ich als Softwareentwickler meine eigenen Projekte.</value>
   </data>
   <data name="Paragraph2" xml:space="preserve">
-    <value>Geld verdienen möchte ich damit nicht. Alles ist Open Source unter der MIT-Lizenz, du kannst es frei nutzen und verändern.</value>
+    <value>Die Projekte verfolgen keine kommerziellen Zwecke. Sie sind quelloffen und stehen unter der MIT-Lizenz zur freien Nutzung und Weiterentwicklung zur Verfügung.</value>
   </data>
 </root>

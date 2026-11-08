@@ -62,7 +62,7 @@
             </div>
             <ul class="product-hero__facts">
                 <li>@Localizer["FactFree"]</li>
-                <li>@Localizer["FactNoCode"]</li>
+                <li>@Localizer["FactLicense"]</li>
                 <li>@Localizer["FactAnyAi"]</li>
             </ul>
         </div>
@@ -190,30 +190,6 @@
     </div>
 </section>
 
-<section class="vt-section product-section" aria-labelledby="@DevelopersTitleId">
-    <div class="vt-container">
-        <SectionHeader TitleId="@DevelopersTitleId"
-                       Overline="@Localizer["DevelopersOverline"]"
-                       Title="@Localizer["DevelopersTitle"]"
-                       Intro="@Localizer["DevelopersIntro"]" />
-        <ul class="decisions">
-            @foreach (var decision in Decisions)
-            {
-                <li class="decisions__item">
-                    <h3 class="decisions__title">@Localizer[$"Decision{decision}Title"]</h3>
-                    <p class="decisions__text">@Localizer[$"Decision{decision}Text"]</p>
-                </li>
-            }
-        </ul>
-        <MudButton Href="@Words2WidgetLinks.Repository" Target="@SiteLinks.NewTabTarget"
-                   Variant="Variant.Outlined"
-                   Color="Color.Primary"
-                   Size="Size.Large"
-                   StartIcon="@Icons.Custom.Brands.GitHub">
-            @Localizer["DevelopersAction"]
-        </MudButton>
-    </div>
-</section>
 
 @code {
     private const string HeroTitleId = "words2widget-title";
@@ -221,7 +197,6 @@
     private const string QuickstartTitleId = "quickstart-title";
     private const string IdeasTitleId = "ideas-title";
     private const string FaqTitleId = "faq-title";
-    private const string DevelopersTitleId = "developers-title";
     private const string InstallerCodeId = "widget-installer-code";
 
     private static readonly (string Href, string Key)[] BarLinks =
@@ -233,7 +208,6 @@
 
     private static readonly string[] MakeSteps = ["Ask", "Copy", "Save", "Place"];
     private static readonly string[] Questions = ["Coding", "Safety", "Cost", "NoWidget", "Refresh"];
-    private static readonly string[] Decisions = ["NoBackend", "AnyAi", "Safe", "OneFile", "Checks", "Device"];
 
     private string PageUrl => Navigation.ToAbsoluteUri(SitePaths.Words2Widget).ToString();
 

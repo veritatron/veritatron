@@ -24,8 +24,8 @@
   <data name="Lead" xml:space="preserve"><value>Die meisten Widgets zeigen dir Zahlen. Deins kann dir sagen, was zu tun ist. Ein Satz genügt, und auf deinem iPhone-Home-Bildschirm steht genau das Widget, das du dir immer gewünscht hast.</value></data>
   <data name="PrimaryAction" xml:space="preserve"><value>Zum Schnellstart</value></data>
   <data name="SecondaryAction" xml:space="preserve"><value>Auf GitHub ansehen</value></data>
-  <data name="FactFree" xml:space="preserve"><value>Kostenlos und MIT-lizenziert</value></data>
-  <data name="FactNoCode" xml:space="preserve"><value>Ohne Programmieren</value></data>
+  <data name="FactFree" xml:space="preserve"><value>Kostenlos</value></data>
+  <data name="FactLicense" xml:space="preserve"><value>MIT-Lizenz</value></data>
   <data name="FactAnyAi" xml:space="preserve"><value>Mit jeder KI</value></data>
 
   <data name="ExamplesOverline" xml:space="preserve"><value>Beispiele</value></data>
@@ -76,30 +76,14 @@
   <data name="FaqOverline" xml:space="preserve"><value>Fragen</value></data>
   <data name="FaqTitle" xml:space="preserve"><value>Häufige Fragen</value></data>
   <data name="FaqCodingQuestion" xml:space="preserve"><value>Muss ich programmieren können?</value></data>
-  <data name="FaqCodingAnswer" xml:space="preserve"><value>Nein. Du musst den Code nie lesen oder ändern.</value></data>
+  <data name="FaqCodingAnswer" xml:space="preserve"><value>Nein. Die KI erstellt den Code. Du kopierst ihn nur und musst ihn weder lesen noch ändern.</value></data>
   <data name="FaqSafetyQuestion" xml:space="preserve"><value>Ist das sicher?</value></data>
-  <data name="FaqSafetyAnswer" xml:space="preserve"><value>Der Installer speichert deinen Code nur. Das Widget selbst ist aber ein Programm, das deine KI schreibt und das Scriptable auf deinem iPhone ausführt. Es kann Daten aus dem Internet laden und dorthin senden. Auf Standort oder Kalender kommt es nur, wenn du das erlaubst. Füge deshalb nur Code aus deinem eigenen KI-Chat ein und gib deiner KI nie Passwörter oder andere Geheimnisse.</value></data>
+  <data name="FaqSafetyAnswer" xml:space="preserve"><value>Der Widget Installer speichert den Code ausschließlich. Er führt ihn nicht aus und lädt nichts herunter. Das fertige Widget ist jedoch ein Programm, das Scriptable auf deinem iPhone ausführt. Es kann Daten aus dem Internet abrufen und dorthin übertragen. Zugriff auf Standort, Kalender oder Erinnerungen erhält es nur mit deiner Zustimmung. Verwende daher nur Code aus deinem eigenen KI-Chat und gib deiner KI niemals Passwörter oder andere vertrauliche Informationen weiter.</value></data>
   <data name="FaqCostQuestion" xml:space="preserve"><value>Was kostet das?</value></data>
-  <data name="FaqCostAnswer" xml:space="preserve"><value>Scriptable ist kostenlos und es gibt keine API-Schlüssel, die du bezahlen müsstest. Manche Widgets brauchen einen kostenlosen Schlüssel des jeweiligen Dienstes. PROMPT.md ist für kostenlose Chatbots ausgelegt. Ob du Skills hochladen kannst, hängt von deinem Claude-Tarif ab.</value></data>
-  <data name="FaqNoWidgetQuestion" xml:space="preserve"><value>Was tue ich, wenn „No widget found“ erscheint?</value></data>
-  <data name="FaqNoWidgetAnswer" xml:space="preserve"><value>Vermutlich fehlt ein Teil des Codes. Nutze die Kopieren-Schaltfläche am Codeblock und versuche es noch einmal.</value></data>
+  <data name="FaqCostAnswer" xml:space="preserve"><value>Scriptable ist kostenlos. Die Widgets sind so ausgelegt, dass sie nur Datenquellen ohne API-Schlüssel oder Konto nutzen. Der Prompt ist für kostenlose KI-Chats geeignet. Ob du den Claude-Skill hochladen kannst, hängt von deinem Claude-Tarif ab.</value></data>
+  <data name="FaqNoWidgetQuestion" xml:space="preserve"><value>Warum erscheint „No widget found“?</value></data>
+  <data name="FaqNoWidgetAnswer" xml:space="preserve"><value>Der Installer hat keinen vollständigen Widget-Code gefunden. Kopiere die gesamte Antwort deiner KI oder den Codeblock erneut und starte den Widget Installer noch einmal.</value></data>
   <data name="FaqRefreshQuestion" xml:space="preserve"><value>Warum aktualisiert sich mein Widget nicht?</value></data>
-  <data name="FaqRefreshAnswer" xml:space="preserve"><value>iOS entscheidet selbst, wann Widgets aktualisiert werden. Das kann eine Weile dauern.</value></data>
+  <data name="FaqRefreshAnswer" xml:space="preserve"><value>Den Zeitpunkt der Aktualisierung bestimmt iOS. Bei niedrigem Akkustand oder seltener Nutzung des Widgets kann es länger dauern.</value></data>
 
-  <data name="DevelopersOverline" xml:space="preserve"><value>Für Entwickler</value></data>
-  <data name="DevelopersTitle" xml:space="preserve"><value>Wie es gebaut ist</value></data>
-  <data name="DevelopersIntro" xml:space="preserve"><value>Ein Satz wird über deine KI zu einem Scriptable-Skript, und der Widget Installer legt es auf dem iPhone ab. Dahinter stehen ein paar bewusste Entscheidungen.</value></data>
-  <data name="DecisionNoBackendTitle" xml:space="preserve"><value>Kein Backend, keine API-Schlüssel</value></data>
-  <data name="DecisionNoBackendText" xml:space="preserve"><value>Alle nutzen die KI-App, die sie schon haben. So entstehen keine laufenden Kosten und es gibt keine Secrets, die abhandenkommen können.</value></data>
-  <data name="DecisionAnyAiTitle" xml:space="preserve"><value>Funktioniert mit jeder KI</value></data>
-  <data name="DecisionAnyAiText" xml:space="preserve"><value>Claude-Skill und Prompt teilen sich dieselben Regeln. Dem Installer ist egal, woher der Code kommt.</value></data>
-  <data name="DecisionSafeTitle" xml:space="preserve"><value>Der Installer speichert nur</value></data>
-  <data name="DecisionSafeText" xml:space="preserve"><value>Würde er Code ausführen oder etwas herunterladen, schlägt die CI fehl. Das fertige Widget läuft danach als normales Skript in Scriptable.</value></data>
-  <data name="DecisionOneFileTitle" xml:space="preserve"><value>Eine Datei pro Widget</value></data>
-  <data name="DecisionOneFileText" xml:space="preserve"><value>Scriptable kennt keinen Build-Schritt und keine Pakete. Jedes Beispiel bleibt in sich geschlossen und für eine KI leicht anpassbar.</value></data>
-  <data name="DecisionChecksTitle" xml:space="preserve"><value>Statische Prüfung im Pull Request</value></data>
-  <data name="DecisionChecksText" xml:space="preserve"><value>check.mjs parst jedes Skript und setzt die Plattformregeln durch, ohne eine einzige Abhängigkeit.</value></data>
-  <data name="DecisionDeviceTitle" xml:space="preserve"><value>Getestet auf echtem iPhone</value></data>
-  <data name="DecisionDeviceText" xml:space="preserve"><value>Jedes Beispiel und der ganze Weg vom Satz zum Widget wurden auf einem Gerät getestet, auch mit ChatGPT und Gemini.</value></data>
-  <data name="DevelopersAction" xml:space="preserve"><value>Quellcode auf GitHub</value></data>
 </root>
