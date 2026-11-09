@@ -34,13 +34,13 @@
     <value>2. Hosting und Server-Logfiles</value>
   </data>
   <data name="HostingText" xml:space="preserve">
-    <value>Beim Aufruf dieser Website verarbeitet der Server technisch notwendige Daten wie IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Seite und Browserkennung. Das ist erforderlich, um die Website sicher und stabil auszuliefern (Art. 6 Abs. 1 lit. f DSGVO). [Hosting-Anbieter und Speicherdauer der Logfiles ergänzen.]</value>
+    <value>Diese Website wird über GitHub Pages bereitgestellt, einen Dienst von GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. Beim Aufruf der Website verarbeitet GitHub technisch notwendige Daten wie IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Seite und Browserkennung. Nach Angaben von GitHub wird die IP-Adresse aus Sicherheitsgründen protokolliert und gespeichert. Das ist erforderlich, um die Website sicher und stabil auszuliefern (Art. 6 Abs. 1 lit. f DSGVO). Dabei können Daten in die USA übermittelt werden. GitHub ist nach dem EU-US Data Privacy Framework zertifiziert (Art. 45 DSGVO). Eine konkrete Speicherdauer für diese Logdaten nennt GitHub nicht, und ich habe auf sie keinen Einfluss. Weitere Informationen stehen in der Datenschutzerklärung von GitHub: https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement</value>
   </data>
   <data name="CookiesHeading" xml:space="preserve">
     <value>3. Cookies und Schriftarten</value>
   </data>
   <data name="CookiesText" xml:space="preserve">
-    <value>Diese Website setzt keine Cookies zu Analyse- oder Werbezwecken. Schriftarten werden vom eigenen Server ausgeliefert; dabei werden keine Daten an Dritte übertragen.</value>
+    <value>Diese Website setzt keine Cookies zu Analyse- oder Werbezwecken. Schriftarten sind Teil dieser Website und werden wie alle anderen Dateien über GitHub Pages ausgeliefert. Weitere Anbieter wie Google Fonts werden dafür nicht eingebunden.</value>
   </data>
   <data name="LinksHeading" xml:space="preserve">
     <value>4. Verlinkte Projekte</value>
