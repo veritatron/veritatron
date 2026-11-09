@@ -12,6 +12,7 @@ builder.Services.AddLocalization();
 builder.Services.AddSingleton(TimeProvider.System);
 builder.Services.AddRazorComponents();
 builder.AddValidatedOptions<SubsitesOptions>();
+builder.AddValidatedOptions<LegalOptions>();
 
 var app = builder.Build();
 

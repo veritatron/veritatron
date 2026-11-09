@@ -9,5 +9,10 @@ namespace Veritatron.AppHost
         /// The websites and applications Veritatron links to.
         /// </summary>
         public const string Subsites = "Subsites";
+
+        /// <summary>
+        /// The provider details shown on the legal pages.
+        /// </summary>
+        public const string Legal = "Legal";
     }
 }

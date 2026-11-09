@@ -1,0 +1,62 @@
+name: Deploy to GitHub Pages
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+env:
+  SOURCE_URL: http://localhost:5199
+  PUBLIC_URL: https://veritatron.de
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+
+      - name: Publish website
+        run: dotnet publish src/Veritatron.Web -c Release -o publish
+
+      - name: Export static files
+        working-directory: publish
+        env:
+          ASPNETCORE_ENVIRONMENT: Production
+          ASPNETCORE_URLS: ${{ env.SOURCE_URL }}
+          Legal__Name: ${{ secrets.LEGAL_NAME }}
+          Legal__Street: ${{ secrets.LEGAL_STREET }}
+          Legal__City: ${{ secrets.LEGAL_CITY }}
+          Legal__Email: ${{ secrets.LEGAL_EMAIL }}
+          Subsites__Items__0__Name: words2widget
+          Subsites__Items__0__Description: Sag, was du willst. Deine KI baut das iPhone-Widget.
+          Subsites__Items__0__Path: /words2widget
+          Subsites__Items__1__Name: Lagebild
+          Subsites__Items__1__Description: Öffentliche Daten. Klar sichtbar.
+          Subsites__Items__1__Status: ComingSoon
+        run: |
+          ./Veritatron.Web &
+          site=$!
+          curl --silent --fail --retry 30 --retry-delay 1 --retry-all-errors --output /dev/null "$SOURCE_URL/"
+          bash "$GITHUB_WORKSPACE/deploy/pages/export.sh" "$SOURCE_URL" "$PUBLIC_URL" "$GITHUB_WORKSPACE/site"
+          kill "$site"
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4

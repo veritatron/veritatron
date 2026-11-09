@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Veritatron.Web\Veritatron.Web\Veritatron.Web.csproj" />
+    <ProjectReference Include="..\Veritatron.Web\Veritatron.Web.csproj" />
   </ItemGroup>
 
 </Project>
