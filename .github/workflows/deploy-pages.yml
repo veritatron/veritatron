@@ -30,7 +30,7 @@ jobs:
           global-json-file: global.json
 
       - name: Publish website
-        run: dotnet publish src/Veritatron.Web/Veritatron.Web -c Release -o publish
+        run: dotnet publish src/Veritatron.Web -c Release -o publish
 
       - name: Export static files
         working-directory: publish
